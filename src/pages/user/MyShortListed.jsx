@@ -1,7 +1,15 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Layout, PropertyCard } from "../../components";
 
+import data from "../../data/property.json";
+
 const MyShortListed = () => {
+  const [property, setProperty] = useState([]);
+
+  useEffect(() => {
+    const fetch = data.slice(2, 7);
+    setProperty(fetch);
+  }, []);
   return (
     <Layout>
       <div className="py-10 bg-[#FFE7E3] mb-6">
@@ -29,8 +37,8 @@ const MyShortListed = () => {
           </select>
         </div>
         <div className="grid grid-cols-3 gap-8">
-          {[1, 1, 1, 1].map((d, i) => {
-            return <PropertyCard key={i} />;
+          {property?.map((d, i) => {
+            return <PropertyCard key={i} property={d} />;
           })}
         </div>
       </div>

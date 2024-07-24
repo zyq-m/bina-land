@@ -1,4 +1,5 @@
 import { Layout, PropertyCard } from "../../components";
+import data from "../../data/property.json";
 
 const Listing = () => {
   return (
@@ -9,29 +10,31 @@ const Listing = () => {
             <option disabled selected>
               Location
             </option>
-            <option>Han Solo</option>
-            <option>Greedo</option>
+            <option>Location 1</option>
+            <option>Location 2</option>
+            <option>Location 3</option>
+            <option>Location 4</option>
           </select>
           <select className="select select-bordered w-full">
             <option disabled selected>
               Price
             </option>
-            <option>Han Solo</option>
-            <option>Greedo</option>
+            <option>Low - High</option>
+            <option>High - Low</option>
           </select>
           <select className="select select-bordered w-full">
             <option disabled selected>
               Property Type
             </option>
-            <option>Han Solo</option>
-            <option>Greedo</option>
+            <option>Home</option>
+            <option>Land</option>
           </select>
           <select className="select select-bordered w-full">
             <option disabled selected>
               Acreage
             </option>
-            <option>Han Solo</option>
-            <option>Greedo</option>
+            <option>Narrow - Wide</option>
+            <option>Wide - Narrow</option>
           </select>
           <div className="flex col-span-2 gap-1">
             <input
@@ -46,8 +49,8 @@ const Listing = () => {
         </div>
 
         <div className="grid grid-cols-3 gap-8">
-          {[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1].map((d, i) => {
-            return <PropertyCard key={i} />;
+          {data.map((d, i) => {
+            return <PropertyCard key={i} property={d} />;
           })}
         </div>
       </div>

@@ -11,12 +11,12 @@ const router = createBrowserRouter([
     element: <Page.Home />,
   },
   {
-    path: "/:id",
-    element: <Page.Detail />,
-  },
-  {
     path: "/list",
     element: <Page.Listing />,
+  },
+  {
+    path: "/list/:id",
+    element: <Page.Detail />,
   },
   {
     path: "/shortlisted",

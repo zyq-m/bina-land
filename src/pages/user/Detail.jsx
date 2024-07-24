@@ -1,10 +1,21 @@
-import React from "react";
+import { useEffect, useState } from "react";
 import { Layout } from "../../components";
 
 import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlined";
 import ReplyOutlinedIcon from "@mui/icons-material/ReplyOutlined";
+import { useParams } from "react-router-dom";
+
+import data from "../../data/property.json";
 
 const Detail = () => {
+  const { id } = useParams();
+  const [property, setProperty] = useState({});
+
+  useEffect(() => {
+    const fetch = data.filter((d) => d.id == id)[0];
+    setProperty(fetch);
+  }, [id]);
+
   return (
     <Layout>
       <div>
@@ -53,10 +64,12 @@ const Detail = () => {
       <div className="max-w-screen-xl mx-auto pb-12">
         <div className="grid gap-4 grid-flow-row-dense grid-row-4 grid-cols-3 mb-6">
           <div className="col-span-2">
-            <div className="capitalize text-lg">Rumah Banglow, Kajang</div>
+            <div className="capitalize text-lg">
+              Rumah Banglow, {property?.city}
+            </div>
             <div className="flex justify-between">
               <div className="text-[#FF5A3C] font-medium">
-                RM250,000.00 - 63.8 Acres
+                {property?.price} - {property?.size} Acres
               </div>
               <div>
                 <button className="btn btn-ghost btn-xs">
@@ -87,20 +100,24 @@ const Detail = () => {
             <div className="font-semibold mb-4">PROPERTY ADDRESS</div>
             <div className="grid grid-cols-3 gap-4">
               <div>
-                <span className="font-medium">Address</span> : No. 16 Jalan
-                Impian Setia
+                <span className="font-medium">Address</span> :{" "}
+                {property?.address?.address}
               </div>
               <div>
-                <span className="font-medium">City</span> : Kajang
+                <span className="font-medium">City</span> :{" "}
+                {property?.address?.city}
               </div>
               <div>
-                <span className="font-medium">Area</span> : Selangor
+                <span className="font-medium">Area</span> :{" "}
+                {property?.address?.country}
               </div>
               <div>
-                <span className="font-medium">State/Country</span> : Malaysia
+                <span className="font-medium">State/Country</span> :{" "}
+                {property?.address?.state}
               </div>
               <div>
-                <span className="font-medium">Zip</span> : 4300
+                <span className="font-medium">Zip</span> :{" "}
+                {property?.address?.zip}
               </div>
             </div>
           </div>
@@ -110,10 +127,7 @@ const Detail = () => {
             <div>Map</div>
             <div>
               <div className="font-semibold">DIRECTIONS</div>
-              <p>
-                From St. Croix Falls travel North on 83 to Beede Lake Trail Turn
-                right. Travel a few miles to the farm.
-              </p>
+              <p>{property?.map?.direction}</p>
             </div>
           </div>
 
@@ -122,12 +136,16 @@ const Detail = () => {
               <div className="flex items-center gap-4 mb-4">
                 <div className="avatar">
                   <div className="w-24 rounded-full">
-                    <img src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
+                    <img src={property?.avatar} />
                   </div>
                 </div>
                 <div>
-                  <div className="text-lg font-medium">Aqief Syahmi</div>
-                  <div className="text-gray-400">Phone : 010-28172121</div>
+                  <div className="text-lg font-medium">
+                    {property?.agent?.name}
+                  </div>
+                  <div className="text-gray-400">
+                    Phone : {property?.agent?.phone}
+                  </div>
                 </div>
               </div>
               <form className="grid gap-4">
@@ -171,10 +189,12 @@ const Detail = () => {
         </div>
 
         <div>
-          <div className="font-semibold mb-4">More by Aqief Syahmi</div>
+          <div className="font-semibold mb-4">
+            More by {property?.agent?.name}
+          </div>
           <div className="grid grid-cols-4 gap-6">
-            {[1, 1, 1, 1].map((d, i) => {
-              return <Card key={i} />;
+            {property?.others?.map((d, i) => {
+              return <Card key={i} others={d} owners={property} />;
             })}
           </div>
         </div>
@@ -185,7 +205,7 @@ const Detail = () => {
 
 export default Detail;
 
-const Card = () => {
+const Card = ({ others, owners }) => {
   return (
     <div className="card card-compact bg-base-100 shadow-xl rounded-md">
       <figure>
@@ -195,21 +215,20 @@ const Card = () => {
         />
       </figure>
       <div className="card-body">
-        <h2 className="card-title">RM250,000.00 - 63.8 Acres</h2>
-        <p>Taman Impian Setia, Kajang 43000, Selangor</p>
+        <h2 className="card-title">
+          {others?.price} - {others?.size} Acres
+        </h2>
+        <p>{others?.address}</p>
         <div className="card-actions justify-between items-center border-t pt-4 mt-3">
           <div className="flex gap-2 items-center">
             <div className="avatar">
               <div className="w-10 rounded-full">
-                <img
-                  src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp"
-                  alt="Tailwind-CSS-Avatar-component"
-                />
+                <img src={owners?.avatar} alt="Tailwind-CSS-Avatar-component" />
               </div>
             </div>
             <div className="text-xs">
-              <div className="font-medium">Aqief Syahmi</div>
-              <div className="text-gray-400">Estate Agent</div>
+              <div className="font-medium">{owners?.agent?.name}</div>
+              <div className="text-gray-400">{owners?.agent?.title}</div>
             </div>
           </div>
           <button className="btn btn-sm btn-outline">Contact</button>
