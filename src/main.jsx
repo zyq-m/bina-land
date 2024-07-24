@@ -8,7 +8,7 @@ import * as Page from "./pages";
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Page.Home />,
+    element: <Page.HomePage />,
   },
   {
     path: "/profile",

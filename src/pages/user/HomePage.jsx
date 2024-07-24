@@ -2,7 +2,7 @@ import React from "react";
 import image from "../../assets/house.png";
 import profile from "../../assets/zahid.jpg";
 
-const Home = () => {
+const HomePage = () => {
   return (
     <>
       {/* Header */}
@@ -344,4 +344,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default HomePage;
