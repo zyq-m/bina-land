@@ -8,6 +8,10 @@ const NAV = [
     label: "Home",
   },
   {
+    link: "/property",
+    label: "My Property",
+  },
+  {
     link: "/list",
     label: "Property List",
   },

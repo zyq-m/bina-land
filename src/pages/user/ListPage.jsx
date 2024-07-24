@@ -1,6 +1,8 @@
+import { Layout } from "../../components";
+
 const ListPage = () => {
   return (
-    <>
+    <Layout>
       <div className="bg-[#FFE7E3] p-10 px-28">
         <div className="flex justify-between">
           <div className="mt-7">
@@ -172,7 +174,7 @@ const ListPage = () => {
                 <td className="text-red-400 font-bold">Rejected</td>
                 <td className="font-semibold">RM 600,000</td>
                 <td>
-                  <button class="btn px-10 btn-outline bg-[#fdfdfd] ">
+                  <button className="btn px-10 btn-outline bg-[#fdfdfd] ">
                     Action
                   </button>
                 </td>
@@ -181,7 +183,7 @@ const ListPage = () => {
           </table>
         </div>
       </div>
-    </>
+    </Layout>
   );
 };
 

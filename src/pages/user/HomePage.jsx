@@ -1,10 +1,11 @@
 import React from "react";
 import image from "../../assets/house.png";
 import profile from "../../assets/zahid.jpg";
+import { Layout } from "../../components";
 
 const HomePage = () => {
   return (
-    <>
+    <Layout>
       {/* Header */}
       <div className="bg-[#F2F6F7] px-52">
         <div className="grid grid-cols-8 gap-36">
@@ -64,7 +65,7 @@ const HomePage = () => {
         <div className="text-center font-bold text-3xl">Featured Listings</div>
 
         <div className="grid grid-cols-4 gap-10 mt-20">
-          <div class="card card-compact bg-base-100 shadow-xl">
+          <div className="card card-compact bg-base-100 shadow-xl">
             <figure>
               <img
                 src="../../src/assets/house1.jpg"
@@ -72,7 +73,7 @@ const HomePage = () => {
                 className="h-50"
               />
             </figure>
-            <div class="card-body">
+            <div className="card-body">
               <div className="mb-2">
                 <p className="text-xl font-bold">
                   Rm 250,000.00
@@ -82,20 +83,20 @@ const HomePage = () => {
                 <p>Kajang, Selangor</p>
               </div>
 
-              <div class="card-actions flex justify-evenly border-t-2 border-zinc-200 py-4">
+              <div className="card-actions flex justify-evenly border-t-2 border-zinc-200 py-4">
                 <img src={profile} alt="" className="rounded-full h-10 mt-1" />
                 <div>
                   <p className="text-lg">Zahid Ashraff</p>
                   <p className="text-zinc-400">Real Estate</p>
                 </div>
-                <button class="btn bg-base-100 border-2 border-black">
+                <button className="btn bg-base-100 border-2 border-black">
                   Contact
                 </button>
               </div>
             </div>
           </div>
 
-          <div class="card card-compact bg-base-100 shadow-xl">
+          <div className="card card-compact bg-base-100 shadow-xl">
             <figure>
               <img
                 src="../../src/assets/house1.jpg"
@@ -103,7 +104,7 @@ const HomePage = () => {
                 className="h-50"
               />
             </figure>
-            <div class="card-body">
+            <div className="card-body">
               <div className="mb-2">
                 <p className="text-xl font-bold">
                   Rm 250,000.00
@@ -113,20 +114,20 @@ const HomePage = () => {
                 <p>Kajang, Selangor</p>
               </div>
 
-              <div class="card-actions flex justify-evenly border-t-2 border-zinc-200 py-4">
+              <div className="card-actions flex justify-evenly border-t-2 border-zinc-200 py-4">
                 <img src={profile} alt="" className="rounded-full h-10 mt-1" />
                 <div>
                   <p className="text-lg">Zahid Ashraff</p>
                   <p className="text-zinc-400">Real Estate</p>
                 </div>
-                <button class="btn bg-base-100 border-2 border-black">
+                <button className="btn bg-base-100 border-2 border-black">
                   Contact
                 </button>
               </div>
             </div>
           </div>
 
-          <div class="card card-compact bg-base-100 shadow-xl">
+          <div className="card card-compact bg-base-100 shadow-xl">
             <figure>
               <img
                 src="../../src/assets/house1.jpg"
@@ -134,7 +135,7 @@ const HomePage = () => {
                 className="h-50"
               />
             </figure>
-            <div class="card-body">
+            <div className="card-body">
               <div className="mb-2">
                 <p className="text-xl font-bold">
                   Rm 250,000.00
@@ -144,20 +145,20 @@ const HomePage = () => {
                 <p>Kajang, Selangor</p>
               </div>
 
-              <div class="card-actions flex justify-evenly border-t-2 border-zinc-200 py-4">
+              <div className="card-actions flex justify-evenly border-t-2 border-zinc-200 py-4">
                 <img src={profile} alt="" className="rounded-full h-10 mt-1" />
                 <div>
                   <p className="text-lg">Zahid Ashraff</p>
                   <p className="text-zinc-400">Real Estate</p>
                 </div>
-                <button class="btn bg-base-100 border-2 border-black">
+                <button className="btn bg-base-100 border-2 border-black">
                   Contact
                 </button>
               </div>
             </div>
           </div>
 
-          <div class="card card-compact bg-base-100 shadow-xl">
+          <div className="card card-compact bg-base-100 shadow-xl">
             <figure>
               <img
                 src="../../src/assets/house1.jpg"
@@ -165,7 +166,7 @@ const HomePage = () => {
                 className="h-50"
               />
             </figure>
-            <div class="card-body">
+            <div className="card-body">
               <div className="mb-2">
                 <p className="text-xl font-bold">
                   Rm 250,000.00
@@ -175,20 +176,20 @@ const HomePage = () => {
                 <p>Kajang, Selangor</p>
               </div>
 
-              <div class="card-actions flex justify-evenly border-t-2 border-zinc-200 py-4">
+              <div className="card-actions flex justify-evenly border-t-2 border-zinc-200 py-4">
                 <img src={profile} alt="" className="rounded-full h-10 mt-1" />
                 <div>
                   <p className="text-lg">Zahid Ashraff</p>
                   <p className="text-zinc-400">Real Estate</p>
                 </div>
-                <button class="btn bg-base-100 border-2 border-black">
+                <button className="btn bg-base-100 border-2 border-black">
                   Contact
                 </button>
               </div>
             </div>
           </div>
 
-          <div class="card card-compact bg-base-100 shadow-xl">
+          <div className="card card-compact bg-base-100 shadow-xl">
             <figure>
               <img
                 src="../../src/assets/house1.jpg"
@@ -196,7 +197,7 @@ const HomePage = () => {
                 className="h-50"
               />
             </figure>
-            <div class="card-body">
+            <div className="card-body">
               <div className="mb-2">
                 <p className="text-xl font-bold">
                   Rm 250,000.00
@@ -206,20 +207,20 @@ const HomePage = () => {
                 <p>Kajang, Selangor</p>
               </div>
 
-              <div class="card-actions flex justify-evenly border-t-2 border-zinc-200 py-4">
+              <div className="card-actions flex justify-evenly border-t-2 border-zinc-200 py-4">
                 <img src={profile} alt="" className="rounded-full h-10 mt-1" />
                 <div>
                   <p className="text-lg">Zahid Ashraff</p>
                   <p className="text-zinc-400">Real Estate</p>
                 </div>
-                <button class="btn bg-base-100 border-2 border-black">
+                <button className="btn bg-base-100 border-2 border-black">
                   Contact
                 </button>
               </div>
             </div>
           </div>
 
-          <div class="card card-compact bg-base-100 shadow-xl">
+          <div className="card card-compact bg-base-100 shadow-xl">
             <figure>
               <img
                 src="../../src/assets/house1.jpg"
@@ -227,7 +228,7 @@ const HomePage = () => {
                 className="h-50"
               />
             </figure>
-            <div class="card-body">
+            <div className="card-body">
               <div className="mb-2">
                 <p className="text-xl font-bold">
                   Rm 250,000.00
@@ -237,20 +238,20 @@ const HomePage = () => {
                 <p>Kajang, Selangor</p>
               </div>
 
-              <div class="card-actions flex justify-evenly border-t-2 border-zinc-200 py-4">
+              <div className="card-actions flex justify-evenly border-t-2 border-zinc-200 py-4">
                 <img src={profile} alt="" className="rounded-full h-10 mt-1" />
                 <div>
                   <p className="text-lg">Zahid Ashraff</p>
                   <p className="text-zinc-400">Real Estate</p>
                 </div>
-                <button class="btn bg-base-100 border-2 border-black">
+                <button className="btn bg-base-100 border-2 border-black">
                   Contact
                 </button>
               </div>
             </div>
           </div>
 
-          <div class="card card-compact bg-base-100 shadow-xl">
+          <div className="card card-compact bg-base-100 shadow-xl">
             <figure>
               <img
                 src="../../src/assets/house1.jpg"
@@ -258,7 +259,7 @@ const HomePage = () => {
                 className="h-50"
               />
             </figure>
-            <div class="card-body">
+            <div className="card-body">
               <div className="mb-2">
                 <p className="text-xl font-bold">
                   Rm 250,000.00
@@ -268,20 +269,20 @@ const HomePage = () => {
                 <p>Kajang, Selangor</p>
               </div>
 
-              <div class="card-actions flex justify-evenly border-t-2 border-zinc-200 py-4">
+              <div className="card-actions flex justify-evenly border-t-2 border-zinc-200 py-4">
                 <img src={profile} alt="" className="rounded-full h-10 mt-1" />
                 <div>
                   <p className="text-lg">Zahid Ashraff</p>
                   <p className="text-zinc-400">Real Estate</p>
                 </div>
-                <button class="btn bg-base-100 border-2 border-black">
+                <button className="btn bg-base-100 border-2 border-black">
                   Contact
                 </button>
               </div>
             </div>
           </div>
 
-          <div class="card card-compact bg-base-100 shadow-xl">
+          <div className="card card-compact bg-base-100 shadow-xl">
             <figure>
               <img
                 src="../../src/assets/house1.jpg"
@@ -289,7 +290,7 @@ const HomePage = () => {
                 className="h-50"
               />
             </figure>
-            <div class="card-body">
+            <div className="card-body">
               <div className="mb-2">
                 <p className="text-xl font-bold">
                   Rm 250,000.00
@@ -299,13 +300,13 @@ const HomePage = () => {
                 <p>Kajang, Selangor</p>
               </div>
 
-              <div class="card-actions flex justify-evenly border-t-2 border-zinc-200 py-4">
+              <div className="card-actions flex justify-evenly border-t-2 border-zinc-200 py-4">
                 <img src={profile} alt="" className="rounded-full h-10 mt-1" />
                 <div>
                   <p className="text-lg">Zahid Ashraff</p>
                   <p className="text-zinc-400">Real Estate</p>
                 </div>
-                <button class="btn bg-base-100 border-2 border-black">
+                <button className="btn bg-base-100 border-2 border-black">
                   Contact
                 </button>
               </div>
@@ -340,7 +341,7 @@ const HomePage = () => {
           </div>
         </div>
       </div>
-    </>
+    </Layout>
   );
 };
 
