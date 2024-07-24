@@ -10,6 +10,18 @@ const router = createBrowserRouter([
     path: "/",
     element: <Page.Home />,
   },
+  {
+    path: "/:id",
+    element: <Page.Detail />,
+  },
+  {
+    path: "/list",
+    element: <Page.Listing />,
+  },
+  {
+    path: "/shortlisted",
+    element: <Page.MyShortListed />,
+  },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
