@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Layout } from "../../components";
+import GoogleMapReact from "google-map-react";
 
 import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlined";
 import ReplyOutlinedIcon from "@mui/icons-material/ReplyOutlined";
@@ -65,7 +66,7 @@ const Detail = () => {
         <div className="grid gap-4 grid-flow-row-dense grid-row-4 grid-cols-3 mb-6">
           <div className="col-span-2">
             <div className="capitalize text-lg">
-              Rumah Banglow, {property?.city}
+              Rumah Banglow, {property?.address?.city}
             </div>
             <div className="flex justify-between">
               <div className="text-[#FF5A3C] font-medium">
@@ -124,14 +125,23 @@ const Detail = () => {
 
           <div className="col-span-2">
             <div className="font-semibold mb-4">MAP</div>
-            <div>Map</div>
+            <div style={{ height: "100vh", width: "100%" }}>
+              <GoogleMapReact
+                bootstrapURLKeys={{ key: "" }}
+                defaultCenter={{
+                  lat: property?.map?.lat,
+                  lng: property?.map?.long,
+                }}
+                defaultZoom={11}
+              ></GoogleMapReact>
+            </div>
             <div>
               <div className="font-semibold">DIRECTIONS</div>
               <p>{property?.map?.direction}</p>
             </div>
           </div>
 
-          <div className="card bg-base-100 shadow-md rounded-lg row-start-2 col-start-3 row-span-4">
+          <div className="card bg-base-100 shadow-md rounded-lg row-start-2 col-start-3 row-span-4 h-min">
             <div className="card-body">
               <div className="flex items-center gap-4 mb-4">
                 <div className="avatar">
