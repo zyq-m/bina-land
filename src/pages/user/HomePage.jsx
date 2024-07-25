@@ -1,6 +1,4 @@
 import React from "react";
-import image from "../../assets/house.png";
-import profile from "../../assets/zahid.jpg";
 import { Layout } from "../../components";
 
 const HomePage = () => {
@@ -27,10 +25,7 @@ const HomePage = () => {
 
           <div className="col-start-5 col-span-4">
             <div className="">
-              <img
-                src="../../src/assets/house.png"
-                style={{ height: "700px" }}
-              ></img>
+              <img src="/house.png" style={{ height: "700px" }}></img>
             </div>
           </div>
         </div>
@@ -67,11 +62,7 @@ const HomePage = () => {
         <div className="grid grid-cols-4 gap-10 mt-20">
           <div className="card card-compact bg-base-100 shadow-xl">
             <figure>
-              <img
-                src="../../src/assets/house1.jpg"
-                alt="Shoes"
-                className="h-50"
-              />
+              <img src="/house1.jpg" alt="Shoes" className="h-50" />
             </figure>
             <div className="card-body">
               <div className="mb-2">
@@ -84,7 +75,11 @@ const HomePage = () => {
               </div>
 
               <div className="card-actions flex justify-evenly border-t-2 border-zinc-200 py-4">
-                <img src={profile} alt="" className="rounded-full h-10 mt-1" />
+                <img
+                  src="/zahid.jpg"
+                  alt=""
+                  className="rounded-full h-10 mt-1"
+                />
                 <div>
                   <p className="text-lg">Zahid Ashraff</p>
                   <p className="text-zinc-400">Real Estate</p>
@@ -98,11 +93,7 @@ const HomePage = () => {
 
           <div className="card card-compact bg-base-100 shadow-xl">
             <figure>
-              <img
-                src="../../src/assets/house1.jpg"
-                alt="Shoes"
-                className="h-50"
-              />
+              <img src="/house1.jpg" alt="Shoes" className="h-50" />
             </figure>
             <div className="card-body">
               <div className="mb-2">
@@ -115,7 +106,11 @@ const HomePage = () => {
               </div>
 
               <div className="card-actions flex justify-evenly border-t-2 border-zinc-200 py-4">
-                <img src={profile} alt="" className="rounded-full h-10 mt-1" />
+                <img
+                  src="/zahid.jpg"
+                  alt=""
+                  className="rounded-full h-10 mt-1"
+                />
                 <div>
                   <p className="text-lg">Zahid Ashraff</p>
                   <p className="text-zinc-400">Real Estate</p>
@@ -129,11 +124,7 @@ const HomePage = () => {
 
           <div className="card card-compact bg-base-100 shadow-xl">
             <figure>
-              <img
-                src="../../src/assets/house1.jpg"
-                alt="Shoes"
-                className="h-50"
-              />
+              <img src="/house1.jpg" alt="Shoes" className="h-50" />
             </figure>
             <div className="card-body">
               <div className="mb-2">
@@ -146,7 +137,11 @@ const HomePage = () => {
               </div>
 
               <div className="card-actions flex justify-evenly border-t-2 border-zinc-200 py-4">
-                <img src={profile} alt="" className="rounded-full h-10 mt-1" />
+                <img
+                  src="/zahid.jpg"
+                  alt=""
+                  className="rounded-full h-10 mt-1"
+                />
                 <div>
                   <p className="text-lg">Zahid Ashraff</p>
                   <p className="text-zinc-400">Real Estate</p>
@@ -160,11 +155,7 @@ const HomePage = () => {
 
           <div className="card card-compact bg-base-100 shadow-xl">
             <figure>
-              <img
-                src="../../src/assets/house1.jpg"
-                alt="Shoes"
-                className="h-50"
-              />
+              <img src="/house1.jpg" alt="Shoes" className="h-50" />
             </figure>
             <div className="card-body">
               <div className="mb-2">
@@ -177,7 +168,11 @@ const HomePage = () => {
               </div>
 
               <div className="card-actions flex justify-evenly border-t-2 border-zinc-200 py-4">
-                <img src={profile} alt="" className="rounded-full h-10 mt-1" />
+                <img
+                  src="/zahid.jpg"
+                  alt=""
+                  className="rounded-full h-10 mt-1"
+                />
                 <div>
                   <p className="text-lg">Zahid Ashraff</p>
                   <p className="text-zinc-400">Real Estate</p>
@@ -191,11 +186,7 @@ const HomePage = () => {
 
           <div className="card card-compact bg-base-100 shadow-xl">
             <figure>
-              <img
-                src="../../src/assets/house1.jpg"
-                alt="Shoes"
-                className="h-50"
-              />
+              <img src="/house1.jpg" alt="Shoes" className="h-50" />
             </figure>
             <div className="card-body">
               <div className="mb-2">
@@ -208,7 +199,11 @@ const HomePage = () => {
               </div>
 
               <div className="card-actions flex justify-evenly border-t-2 border-zinc-200 py-4">
-                <img src={profile} alt="" className="rounded-full h-10 mt-1" />
+                <img
+                  src="/zahid.jpg"
+                  alt=""
+                  className="rounded-full h-10 mt-1"
+                />
                 <div>
                   <p className="text-lg">Zahid Ashraff</p>
                   <p className="text-zinc-400">Real Estate</p>
@@ -222,11 +217,7 @@ const HomePage = () => {
 
           <div className="card card-compact bg-base-100 shadow-xl">
             <figure>
-              <img
-                src="../../src/assets/house1.jpg"
-                alt="Shoes"
-                className="h-50"
-              />
+              <img src="/house1.jpg" alt="Shoes" className="h-50" />
             </figure>
             <div className="card-body">
               <div className="mb-2">
@@ -239,7 +230,11 @@ const HomePage = () => {
               </div>
 
               <div className="card-actions flex justify-evenly border-t-2 border-zinc-200 py-4">
-                <img src={profile} alt="" className="rounded-full h-10 mt-1" />
+                <img
+                  src="/zahid.jpg"
+                  alt=""
+                  className="rounded-full h-10 mt-1"
+                />
                 <div>
                   <p className="text-lg">Zahid Ashraff</p>
                   <p className="text-zinc-400">Real Estate</p>
@@ -253,11 +248,7 @@ const HomePage = () => {
 
           <div className="card card-compact bg-base-100 shadow-xl">
             <figure>
-              <img
-                src="../../src/assets/house1.jpg"
-                alt="Shoes"
-                className="h-50"
-              />
+              <img src="/house1.jpg" alt="Shoes" className="h-50" />
             </figure>
             <div className="card-body">
               <div className="mb-2">
@@ -270,7 +261,11 @@ const HomePage = () => {
               </div>
 
               <div className="card-actions flex justify-evenly border-t-2 border-zinc-200 py-4">
-                <img src={profile} alt="" className="rounded-full h-10 mt-1" />
+                <img
+                  src="/zahid.jpg"
+                  alt=""
+                  className="rounded-full h-10 mt-1"
+                />
                 <div>
                   <p className="text-lg">Zahid Ashraff</p>
                   <p className="text-zinc-400">Real Estate</p>
@@ -284,11 +279,7 @@ const HomePage = () => {
 
           <div className="card card-compact bg-base-100 shadow-xl">
             <figure>
-              <img
-                src="../../src/assets/house1.jpg"
-                alt="Shoes"
-                className="h-50"
-              />
+              <img src="/house1.jpg" alt="Shoes" className="h-50" />
             </figure>
             <div className="card-body">
               <div className="mb-2">
@@ -301,7 +292,11 @@ const HomePage = () => {
               </div>
 
               <div className="card-actions flex justify-evenly border-t-2 border-zinc-200 py-4">
-                <img src={profile} alt="" className="rounded-full h-10 mt-1" />
+                <img
+                  src="/zahid.jpg"
+                  alt=""
+                  className="rounded-full h-10 mt-1"
+                />
                 <div>
                   <p className="text-lg">Zahid Ashraff</p>
                   <p className="text-zinc-400">Real Estate</p>
@@ -320,7 +315,7 @@ const HomePage = () => {
         <div className="grid grid-cols-2 gap-36">
           <div className="col-span-1">
             <img
-              src="../../src/assets/house_png_-removebg-preview.png"
+              src="/house_png_-removebg-preview.png"
               style={{ height: "700px" }}
             ></img>
           </div>

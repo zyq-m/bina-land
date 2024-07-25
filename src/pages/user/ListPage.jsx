@@ -12,9 +12,9 @@ const ListPage = () => {
 
           <div>
             <img
-              src="../../src/assets/icon_dasdasdsadas-removebg-preview.png"
+              src="/icon_dasdasdsadas-removebg-preview.png"
               alt=""
-              className="h-28"
+              className="w-36"
             />
           </div>
         </div>
@@ -51,7 +51,7 @@ const ListPage = () => {
                     <div className="avatar">
                       <div className="mask h-32 w-36 rounded-md">
                         <img
-                          src="../../src/assets/house1.jpg"
+                          src="/house1.jpg"
                           alt="Avatar Tailwind CSS Component"
                         />
                       </div>
@@ -85,7 +85,7 @@ const ListPage = () => {
                     <div className="avatar">
                       <div className="mask h-32 w-36 rounded-md">
                         <img
-                          src="../../src/assets/house8.jpg"
+                          src="/house8.jpg"
                           alt="Avatar Tailwind CSS Component"
                         />
                       </div>
@@ -119,7 +119,7 @@ const ListPage = () => {
                     <div className="avatar">
                       <div className="mask h-32 w-36 rounded-md">
                         <img
-                          src="../../src/assets/house3.jpg"
+                          src="/house3.jpg"
                           alt="Avatar Tailwind CSS Component"
                         />
                       </div>
@@ -153,7 +153,7 @@ const ListPage = () => {
                     <div className="avatar">
                       <div className="mask h-32 w-36 rounded-md">
                         <img
-                          src="../../src/assets/house4.jpg"
+                          src="/house4.jpg"
                           alt="Avatar Tailwind CSS Component"
                         />
                       </div>

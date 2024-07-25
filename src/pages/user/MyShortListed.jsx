@@ -13,7 +13,7 @@ const MyShortListed = () => {
   return (
     <Layout>
       <div className="py-10 bg-[#FFE7E3] mb-6">
-        <div className="max-w-screen-xl mx-auto">
+        <div className="max-w-screen-xl mx-auto flex justify-between items-center">
           <div>
             <h1 className="text-3xl font-bold">My Shorlisted</h1>
             <p className="text-sm">
@@ -21,7 +21,11 @@ const MyShortListed = () => {
             </p>
           </div>
           <div>
-            <img src="" alt="" />
+            <img
+              src="/icon_dasdasdsadas-removebg-preview.png"
+              alt=""
+              className="w-36"
+            />
           </div>
         </div>
       </div>
