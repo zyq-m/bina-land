@@ -63,7 +63,7 @@ const Detail = () => {
       </div>
 
       <div className="max-w-screen-xl mx-auto pb-12">
-        <div className="grid gap-4 grid-flow-row-dense grid-row-4 grid-cols-3 mb-6">
+        <div className="grid gap-8 grid-flow-row-dense grid-row-4 grid-cols-3 mb-8">
           <div className="col-span-2">
             <div className="capitalize text-lg">
               Rumah Banglow, {property?.address?.city}
@@ -85,7 +85,7 @@ const Detail = () => {
             </div>
           </div>
 
-          <div className="px-4 py-6 shadow-md rounded-lg col-span-2 bg-base-100">
+          <div className="p-6 shadow-md rounded-lg col-span-2 bg-base-100">
             <div className="font-semibold mb-4">PROPERTY DESCRIPTION</div>
             <p>
               Former high end beach home converted to Class “A” office space.
@@ -97,7 +97,7 @@ const Detail = () => {
             </p>
           </div>
 
-          <div className="px-4 py-6 shadow-md rounded-lg col-span-2 bg-base-100">
+          <div className="p-6 shadow-md rounded-lg col-span-2 bg-base-100">
             <div className="font-semibold mb-4">PROPERTY ADDRESS</div>
             <div className="grid grid-cols-3 gap-4">
               <div>
@@ -125,7 +125,7 @@ const Detail = () => {
 
           <div className="col-span-2">
             <div className="font-semibold mb-4">MAP</div>
-            <div style={{ height: "100vh", width: "100%" }}>
+            <div className="w-full h-[calc(100vh_-_10rem)] mb-4">
               <GoogleMapReact
                 bootstrapURLKeys={{ key: "" }}
                 defaultCenter={{
@@ -138,6 +138,21 @@ const Detail = () => {
             <div>
               <div className="font-semibold">DIRECTIONS</div>
               <p>{property?.map?.direction}</p>
+            </div>
+          </div>
+
+          <div className="col-span-2">
+            <div className="font-semibold mb-4">PROPERTY VIDEO</div>
+            <div className="relative pb-[56%]">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/cEHMIPT9vcs?si=C9n77vQOIWwkQyb2"
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+                className="w-full h-full absolute"
+              ></iframe>
             </div>
           </div>
 

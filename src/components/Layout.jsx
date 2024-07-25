@@ -1,6 +1,5 @@
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
-import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlined";
 
 const NAV = [
   {
@@ -49,12 +48,6 @@ const Layout = ({ children }) => {
         </div>
         <div className="flex-none">
           <div className="flex gap-4 items-center">
-            <Link to="/shortlisted" className="indicator">
-              <span className="indicator-item badge badge-error badge-xs">
-                5
-              </span>
-              <FavoriteBorderOutlinedIcon />
-            </Link>
             <div className="dropdown dropdown-end">
               <div
                 tabIndex={0}
@@ -75,6 +68,14 @@ const Layout = ({ children }) => {
                 <li>
                   <Link to="/profile" className="justify-between">
                     Profile
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/shortlisted" className="justify-between">
+                    My Shortlisted
+                    <div className="badge badge-xs bg-[#FF5A3C] text-base-100">
+                      6
+                    </div>
                   </Link>
                 </li>
                 <li>
