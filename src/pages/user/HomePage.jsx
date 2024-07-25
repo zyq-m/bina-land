@@ -7,7 +7,7 @@ const HomePage = () => {
   return (
     <Layout>
       {/* Header */}
-      <div className="bg-[#F2F6F7] px-52">
+      <div className="bg-[#F2F6F7] px-52 relative">
         <div className="grid grid-cols-8 gap-36">
           <div className="pt-52 col-span-4">
             <p className="mb-1 text-5xl font-bold">Find Your Dream</p>
@@ -36,32 +36,32 @@ const HomePage = () => {
         </div>
 
         {/* Search Bar */}
-        <div className="px-40 absolute bottom-52 left-60">
-          <div className="bg-white p-10 flex justify-around rounded-xl shadow-md">
-            <input
-              type="text"
-              placeholder="Location"
-              className="input input-bordered"
-            />
-            <input
-              type="text"
-              placeholder="Property Type"
-              className="input input-bordered"
-            />
-            <input
-              type="text"
-              placeholder="Price"
-              className="input input-bordered"
-            />
-            <button className="btn bg-[#FF5A3C] px-14 text-lg text-white">
-              Make an Enquiry
-            </button>
+        <div className="px-40 absolute -bottom-16 left-0 right-0">
+          <div className="bg-white p-10 rounded-xl shadow-md w-2/3 mx-auto">
+            <div className="grid grid-cols-4 gap-1">
+              <input
+                type="text"
+                placeholder="Location"
+                className="input input-bordered"
+              />
+              <input
+                type="text"
+                placeholder="Property Type"
+                className="input input-bordered"
+              />
+              <input
+                type="text"
+                placeholder="Price"
+                className="input input-bordered"
+              />
+              <button className="btn bg-[#FF5A3C] text-white">Search</button>
+            </div>
           </div>
         </div>
       </div>
 
       {/* Featured Listing */}
-      <div className="px-52 py-28">
+      <div className="px-52 py-28 bg-base-100">
         <div className="text-center font-bold text-3xl">Featured Listings</div>
 
         <div className="grid grid-cols-4 gap-10 mt-20">

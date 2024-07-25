@@ -32,8 +32,8 @@ const MyShortListed = () => {
             <option disabled selected>
               Sort By
             </option>
-            <option>Han Solo</option>
-            <option>Greedo</option>
+            <option>Type</option>
+            <option>Price</option>
           </select>
         </div>
         <div className="grid grid-cols-3 gap-8">

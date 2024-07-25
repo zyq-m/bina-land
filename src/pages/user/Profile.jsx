@@ -1,6 +1,8 @@
+import { Layout } from "../../components";
+
 const Profile = () => {
   return (
-    <>
+    <Layout>
       <div className="px-40 py-36">
         <div className="text-4xl font-bold mb-20">My Profile</div>
 
@@ -125,13 +127,13 @@ const Profile = () => {
               - You cannot create a new account with the same email id.
             </p>
 
-            <button class="btn px-14 btn-outline bg-[#F6F5F5] mt-7">
+            <button className="btn px-14 btn-outline bg-[#F6F5F5] mt-7">
               Confirm & Delete Account
             </button>
           </div>
         </div>
       </div>
-    </>
+    </Layout>
   );
 };
 

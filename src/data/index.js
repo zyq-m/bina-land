@@ -78,10 +78,10 @@ for (let index = 0; index < 12; index++) {
   });
 }
 
-fs.writeFile("property.json", JSON.stringify(array), (err) => {
-  if (err) {
-    console.error(err);
-  } else {
-    console.log("Ok");
-  }
-});
+// fs.writeFile("property.json", JSON.stringify(array), (err) => {
+//   if (err) {
+//     console.error(err);
+//   } else {
+//     console.log("Ok");
+//   }
+// });

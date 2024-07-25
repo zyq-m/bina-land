@@ -7,10 +7,7 @@ const PropertyCard = ({ property }) => {
     <div className="card card-compact bg-base-100 shadow-xl rounded-md">
       <figure>
         <Link to={`/list/${property.id}`}>
-          <img
-            src="https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg?auto=compress&cs=tinysrgb&w=600"
-            alt="property"
-          />
+          <img src={property?.img} alt="property" />
         </Link>
       </figure>
       <div className="card-body">
