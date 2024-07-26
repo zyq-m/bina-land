@@ -19,49 +19,6 @@ const Detail = () => {
 
   return (
     <Layout>
-      <div>
-        <div className="carousel w-full">
-          <div id="item1" className="carousel-item w-full">
-            <img
-              src="https://images.pexels.com/photos/5997993/pexels-photo-5997993.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-              className="w-full h-80 object-cover"
-            />
-          </div>
-          <div id="item2" className="carousel-item w-full">
-            <img
-              src="https://images.pexels.com/photos/5997992/pexels-photo-5997992.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-              className="w-full h-80 object-cover"
-            />
-          </div>
-          <div id="item3" className="carousel-item w-full">
-            <img
-              src="https://images.pexels.com/photos/5997994/pexels-photo-5997994.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-              className="w-full h-80 object-cover"
-            />
-          </div>
-          <div id="item4" className="carousel-item w-full">
-            <img
-              src="https://images.pexels.com/photos/5997996/pexels-photo-5997996.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-              className="w-full h-80 object-cover"
-            />
-          </div>
-        </div>
-        <div className="flex w-full justify-center gap-2 py-2">
-          <a href="#item1" className="btn btn-xs">
-            1
-          </a>
-          <a href="#item2" className="btn btn-xs">
-            2
-          </a>
-          <a href="#item3" className="btn btn-xs">
-            3
-          </a>
-          <a href="#item4" className="btn btn-xs">
-            4
-          </a>
-        </div>
-      </div>
-
       <div className="max-w-screen-xl mx-auto pb-12">
         <div className="grid gap-8 grid-flow-row-dense grid-row-4 grid-cols-3 mb-8">
           <div className="col-span-2">
@@ -70,7 +27,7 @@ const Detail = () => {
             </div>
             <div className="flex justify-between">
               <div className="text-[#FF5A3C] font-medium">
-                {property?.price} - {property?.size} Acres
+                {property?.price} - {property?.size} square feet
               </div>
               <div>
                 <button className="btn btn-ghost btn-xs">
@@ -83,6 +40,38 @@ const Detail = () => {
                 </button>
               </div>
             </div>
+          </div>
+
+          <div className="col-span-2 relative rounded-lg overflow-hidden">
+            <div className="carousel carousel-center space-x-1">
+              <div id="item1" className="carousel-item w-full">
+                <img
+                  src="https://images.pexels.com/photos/5997993/pexels-photo-5997993.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                  className="w-full h-80 object-cover"
+                />
+              </div>
+              <div id="item2" className="carousel-item w-full">
+                <img
+                  src="https://images.pexels.com/photos/5997992/pexels-photo-5997992.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                  className="w-full h-80 object-cover"
+                />
+              </div>
+              <div id="item3" className="carousel-item w-full">
+                <img
+                  src="https://images.pexels.com/photos/5997994/pexels-photo-5997994.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                  className="w-full h-80 object-cover"
+                />
+              </div>
+              <div id="item4" className="carousel-item w-full">
+                <img
+                  src="https://images.pexels.com/photos/5997996/pexels-photo-5997996.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                  className="w-full h-80 object-cover"
+                />
+              </div>
+            </div>
+            <button className="btn btn-sm absolute bottom-6 left-6 rounded-full">
+              View all 4 pictures
+            </button>
           </div>
 
           <div className="p-6 shadow-md rounded-lg col-span-2 bg-base-100">

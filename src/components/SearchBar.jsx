@@ -27,7 +27,7 @@ const SearchBar = () => {
       </select>
       <input
         type="number"
-        placeholder="Size (square feet unit)"
+        placeholder="Size (sqft)"
         className="input input-bordered w-full"
       />
       <div className="flex col-span-2 gap-1">
