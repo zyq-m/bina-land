@@ -194,7 +194,7 @@ const Detail = () => {
                   placeholder="Message"
                 ></textarea>
                 <button type="button" className="btn bg-[#FF5A3C] text-white">
-                  Contact Seller
+                  Contact Staff
                 </button>
               </form>
               <div className="card-actions justify-end">

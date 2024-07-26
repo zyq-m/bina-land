@@ -1,5 +1,8 @@
 import React from "react";
-import { Layout } from "../../components";
+import { Link } from "react-router-dom";
+import { Layout, PropertyCard, SearchBar } from "../../components";
+
+import data from "../../data/property.json";
 
 const HomePage = () => {
   return (
@@ -8,19 +11,23 @@ const HomePage = () => {
       <div className="bg-[#F2F6F7] px-52 relative">
         <div className="grid grid-cols-8 gap-36">
           <div className="pt-52 col-span-4">
-            <p className="mb-1 text-5xl font-bold">Find Your Dream</p>
+            <p className="mb-1 text-5xl font-bold">Unlocking the Door</p>
             <p className="mb-2 text-5xl font-bold">
-              House By Us
+              to Your Future
               <span className="text-4xl font-bold text-[#FF5A3C]">.</span>
             </p>
             <p className="mb-2 text-lg">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the. simply dummy the printing and
-              typesetting industry. Lorem Ipsum has been the
+              Welcome to our real estate platform, where every property
+              represents a key to your future. Whether you’re seeking a serene
+              residential haven, a bustling commercial space, or an industrial
+              hub, we’re here to guide you toward the perfect fit.
             </p>
-            <button className="btn bg-[#FF5A3C] px-14 text-lg text-white">
-              Make an Enquiry
-            </button>
+            <Link
+              to="/list"
+              className="btn bg-[#FF5A3C] px-14 text-lg text-white"
+            >
+              Explore Now
+            </Link>
           </div>
 
           <div className="col-start-5 col-span-4">
@@ -31,27 +38,8 @@ const HomePage = () => {
         </div>
 
         {/* Search Bar */}
-        <div className="px-40 absolute -bottom-16 left-0 right-0">
-          <div className="bg-white p-10 rounded-xl shadow-md w-2/3 mx-auto">
-            <div className="grid grid-cols-4 gap-1">
-              <input
-                type="text"
-                placeholder="Location"
-                className="input input-bordered"
-              />
-              <input
-                type="text"
-                placeholder="Property Type"
-                className="input input-bordered"
-              />
-              <input
-                type="text"
-                placeholder="Price"
-                className="input input-bordered"
-              />
-              <button className="btn bg-[#FF5A3C] text-white">Search</button>
-            </div>
-          </div>
+        <div className="px-40 absolute -bottom-24 left-0 right-0">
+          <SearchBar />
         </div>
       </div>
 
@@ -60,253 +48,9 @@ const HomePage = () => {
         <div className="text-center font-bold text-3xl">Featured Listings</div>
 
         <div className="grid grid-cols-4 gap-10 mt-20">
-          <div className="card card-compact bg-base-100 shadow-xl">
-            <figure>
-              <img src="/house1.jpg" alt="Shoes" className="h-50" />
-            </figure>
-            <div className="card-body">
-              <div className="mb-2">
-                <p className="text-xl font-bold">
-                  Rm 250,000.00
-                  <span className="text-2xl text-[#FF5A3C]"> - </span>
-                  64.8 Acres
-                </p>
-                <p>Kajang, Selangor</p>
-              </div>
-
-              <div className="card-actions flex justify-evenly border-t-2 border-zinc-200 py-4">
-                <img
-                  src="/zahid.jpg"
-                  alt=""
-                  className="rounded-full h-10 mt-1"
-                />
-                <div>
-                  <p className="text-lg">Zahid Ashraff</p>
-                  <p className="text-zinc-400">Real Estate</p>
-                </div>
-                <button className="btn bg-base-100 border-2 border-black">
-                  Contact
-                </button>
-              </div>
-            </div>
-          </div>
-
-          <div className="card card-compact bg-base-100 shadow-xl">
-            <figure>
-              <img src="/house1.jpg" alt="Shoes" className="h-50" />
-            </figure>
-            <div className="card-body">
-              <div className="mb-2">
-                <p className="text-xl font-bold">
-                  Rm 250,000.00
-                  <span className="text-2xl text-[#FF5A3C]"> - </span>
-                  64.8 Acres
-                </p>
-                <p>Kajang, Selangor</p>
-              </div>
-
-              <div className="card-actions flex justify-evenly border-t-2 border-zinc-200 py-4">
-                <img
-                  src="/zahid.jpg"
-                  alt=""
-                  className="rounded-full h-10 mt-1"
-                />
-                <div>
-                  <p className="text-lg">Zahid Ashraff</p>
-                  <p className="text-zinc-400">Real Estate</p>
-                </div>
-                <button className="btn bg-base-100 border-2 border-black">
-                  Contact
-                </button>
-              </div>
-            </div>
-          </div>
-
-          <div className="card card-compact bg-base-100 shadow-xl">
-            <figure>
-              <img src="/house1.jpg" alt="Shoes" className="h-50" />
-            </figure>
-            <div className="card-body">
-              <div className="mb-2">
-                <p className="text-xl font-bold">
-                  Rm 250,000.00
-                  <span className="text-2xl text-[#FF5A3C]"> - </span>
-                  64.8 Acres
-                </p>
-                <p>Kajang, Selangor</p>
-              </div>
-
-              <div className="card-actions flex justify-evenly border-t-2 border-zinc-200 py-4">
-                <img
-                  src="/zahid.jpg"
-                  alt=""
-                  className="rounded-full h-10 mt-1"
-                />
-                <div>
-                  <p className="text-lg">Zahid Ashraff</p>
-                  <p className="text-zinc-400">Real Estate</p>
-                </div>
-                <button className="btn bg-base-100 border-2 border-black">
-                  Contact
-                </button>
-              </div>
-            </div>
-          </div>
-
-          <div className="card card-compact bg-base-100 shadow-xl">
-            <figure>
-              <img src="/house1.jpg" alt="Shoes" className="h-50" />
-            </figure>
-            <div className="card-body">
-              <div className="mb-2">
-                <p className="text-xl font-bold">
-                  Rm 250,000.00
-                  <span className="text-2xl text-[#FF5A3C]"> - </span>
-                  64.8 Acres
-                </p>
-                <p>Kajang, Selangor</p>
-              </div>
-
-              <div className="card-actions flex justify-evenly border-t-2 border-zinc-200 py-4">
-                <img
-                  src="/zahid.jpg"
-                  alt=""
-                  className="rounded-full h-10 mt-1"
-                />
-                <div>
-                  <p className="text-lg">Zahid Ashraff</p>
-                  <p className="text-zinc-400">Real Estate</p>
-                </div>
-                <button className="btn bg-base-100 border-2 border-black">
-                  Contact
-                </button>
-              </div>
-            </div>
-          </div>
-
-          <div className="card card-compact bg-base-100 shadow-xl">
-            <figure>
-              <img src="/house1.jpg" alt="Shoes" className="h-50" />
-            </figure>
-            <div className="card-body">
-              <div className="mb-2">
-                <p className="text-xl font-bold">
-                  Rm 250,000.00
-                  <span className="text-2xl text-[#FF5A3C]"> - </span>
-                  64.8 Acres
-                </p>
-                <p>Kajang, Selangor</p>
-              </div>
-
-              <div className="card-actions flex justify-evenly border-t-2 border-zinc-200 py-4">
-                <img
-                  src="/zahid.jpg"
-                  alt=""
-                  className="rounded-full h-10 mt-1"
-                />
-                <div>
-                  <p className="text-lg">Zahid Ashraff</p>
-                  <p className="text-zinc-400">Real Estate</p>
-                </div>
-                <button className="btn bg-base-100 border-2 border-black">
-                  Contact
-                </button>
-              </div>
-            </div>
-          </div>
-
-          <div className="card card-compact bg-base-100 shadow-xl">
-            <figure>
-              <img src="/house1.jpg" alt="Shoes" className="h-50" />
-            </figure>
-            <div className="card-body">
-              <div className="mb-2">
-                <p className="text-xl font-bold">
-                  Rm 250,000.00
-                  <span className="text-2xl text-[#FF5A3C]"> - </span>
-                  64.8 Acres
-                </p>
-                <p>Kajang, Selangor</p>
-              </div>
-
-              <div className="card-actions flex justify-evenly border-t-2 border-zinc-200 py-4">
-                <img
-                  src="/zahid.jpg"
-                  alt=""
-                  className="rounded-full h-10 mt-1"
-                />
-                <div>
-                  <p className="text-lg">Zahid Ashraff</p>
-                  <p className="text-zinc-400">Real Estate</p>
-                </div>
-                <button className="btn bg-base-100 border-2 border-black">
-                  Contact
-                </button>
-              </div>
-            </div>
-          </div>
-
-          <div className="card card-compact bg-base-100 shadow-xl">
-            <figure>
-              <img src="/house1.jpg" alt="Shoes" className="h-50" />
-            </figure>
-            <div className="card-body">
-              <div className="mb-2">
-                <p className="text-xl font-bold">
-                  Rm 250,000.00
-                  <span className="text-2xl text-[#FF5A3C]"> - </span>
-                  64.8 Acres
-                </p>
-                <p>Kajang, Selangor</p>
-              </div>
-
-              <div className="card-actions flex justify-evenly border-t-2 border-zinc-200 py-4">
-                <img
-                  src="/zahid.jpg"
-                  alt=""
-                  className="rounded-full h-10 mt-1"
-                />
-                <div>
-                  <p className="text-lg">Zahid Ashraff</p>
-                  <p className="text-zinc-400">Real Estate</p>
-                </div>
-                <button className="btn bg-base-100 border-2 border-black">
-                  Contact
-                </button>
-              </div>
-            </div>
-          </div>
-
-          <div className="card card-compact bg-base-100 shadow-xl">
-            <figure>
-              <img src="/house1.jpg" alt="Shoes" className="h-50" />
-            </figure>
-            <div className="card-body">
-              <div className="mb-2">
-                <p className="text-xl font-bold">
-                  Rm 250,000.00
-                  <span className="text-2xl text-[#FF5A3C]"> - </span>
-                  64.8 Acres
-                </p>
-                <p>Kajang, Selangor</p>
-              </div>
-
-              <div className="card-actions flex justify-evenly border-t-2 border-zinc-200 py-4">
-                <img
-                  src="/zahid.jpg"
-                  alt=""
-                  className="rounded-full h-10 mt-1"
-                />
-                <div>
-                  <p className="text-lg">Zahid Ashraff</p>
-                  <p className="text-zinc-400">Real Estate</p>
-                </div>
-                <button className="btn bg-base-100 border-2 border-black">
-                  Contact
-                </button>
-              </div>
-            </div>
-          </div>
+          {data.slice(0, 8).map((d, i) => {
+            return <PropertyCard key={i} property={d} />;
+          })}
         </div>
       </div>
 

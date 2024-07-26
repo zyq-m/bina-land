@@ -7,12 +7,16 @@ const NAV = [
     label: "Home",
   },
   {
-    link: "/property",
-    label: "My Property",
+    link: "/list",
+    label: "Explore Property",
   },
   {
-    link: "/list",
-    label: "Property List",
+    link: "/about",
+    label: "About Us",
+  },
+  {
+    link: "/staff",
+    label: "Our Staff",
   },
 ];
 
