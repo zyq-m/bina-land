@@ -25,7 +25,7 @@ const PropertyCard = ({ property }) => {
           </button>
         </h2>
         <p>
-          {property?.address.city}, {property?.address.state}
+          {property?.address?.city}, {property?.address?.state}
         </p>
         <p className="font-bold text-[#FF5A3C]">{property?.price}</p>
       </div>

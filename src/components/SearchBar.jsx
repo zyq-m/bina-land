@@ -6,7 +6,7 @@ const SearchBar = () => {
   const update = usePropertyStore((s) => s.update);
 
   const onSearch = () => {
-    if (!search) {
+    if (search.length) {
       update(search);
     }
   };
