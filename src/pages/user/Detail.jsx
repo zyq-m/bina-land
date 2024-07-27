@@ -1,33 +1,66 @@
 import { useEffect, useState } from "react";
-import { Layout } from "../../components";
-import GoogleMapReact from "google-map-react";
+import { Layout, PropertyCard } from "../../components";
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
 
 import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlined";
 import ReplyOutlinedIcon from "@mui/icons-material/ReplyOutlined";
 import { useParams } from "react-router-dom";
-
-import data from "../../data/property.json";
+import { usePropertyStore } from "../../hooks";
 
 const Detail = () => {
   const { id } = useParams();
   const [property, setProperty] = useState({});
+  const [viewImg, setViewImg] = useState(false);
+  const data = usePropertyStore((s) => s.property);
 
   useEffect(() => {
     const fetch = data.filter((d) => d.id == id)[0];
     setProperty(fetch);
   }, [id]);
 
+  if (viewImg) {
+    return (
+      <div>
+        <button
+          className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2 z-10"
+          onClick={() => setViewImg(false)}
+        >
+          ✕
+        </button>
+        <Carousel
+          infinite={true}
+          responsive={{
+            desktop: {
+              breakpoint: { max: 3000, min: 1024 },
+              items: 1,
+              slidesToSlide: 1,
+            },
+          }}
+        >
+          {property?.img?.map((d, i) => {
+            return (
+              <div key={i} className="h-screen grid place-content-center">
+                <img src={d?.src} className="mx-auto" />
+              </div>
+            );
+          })}
+        </Carousel>
+      </div>
+    );
+  }
+
   return (
     <Layout>
       <div className="max-w-screen-xl mx-auto pb-12">
-        <div className="grid gap-8 grid-flow-row-dense grid-row-4 grid-cols-3 mb-8">
+        <div className="grid gap-8 grid-flow-row-dense grid-row-4 grid-cols-3 mb-8 pt-8">
           <div className="col-span-2">
-            <div className="capitalize text-lg">
-              Rumah Banglow, {property?.address?.city}
+            <div className="text-xl text-[#FF5A3C] font-bold">
+              {property?.price} - {property?.size} square feet
             </div>
             <div className="flex justify-between">
-              <div className="text-[#FF5A3C] font-medium">
-                {property?.price} - {property?.size} square feet
+              <div className="capitalize">
+                {property?.name}, {property?.address?.city}
               </div>
               <div>
                 <button className="btn btn-ghost btn-xs">
@@ -42,35 +75,21 @@ const Detail = () => {
             </div>
           </div>
 
-          <div className="col-span-2 relative rounded-lg overflow-hidden">
-            <div className="carousel carousel-center space-x-1">
-              <div id="item1" className="carousel-item w-full">
-                <img
-                  src="https://images.pexels.com/photos/5997993/pexels-photo-5997993.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                  className="w-full h-80 object-cover"
-                />
-              </div>
-              <div id="item2" className="carousel-item w-full">
-                <img
-                  src="https://images.pexels.com/photos/5997992/pexels-photo-5997992.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                  className="w-full h-80 object-cover"
-                />
-              </div>
-              <div id="item3" className="carousel-item w-full">
-                <img
-                  src="https://images.pexels.com/photos/5997994/pexels-photo-5997994.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                  className="w-full h-80 object-cover"
-                />
-              </div>
-              <div id="item4" className="carousel-item w-full">
-                <img
-                  src="https://images.pexels.com/photos/5997996/pexels-photo-5997996.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                  className="w-full h-80 object-cover"
-                />
-              </div>
+          <div className="col-span-2 relative">
+            <div className="carousel space-x-1 rounded-lg">
+              {property?.img?.map((d, i) => {
+                return (
+                  <div key={i} className="carousel-item">
+                    <img src={d?.src} className="w-full" />
+                  </div>
+                );
+              })}
             </div>
-            <button className="btn btn-sm absolute bottom-6 left-6 rounded-full">
-              View all 4 pictures
+            <button
+              className="btn btn-sm absolute bottom-6 left-6 rounded-full"
+              onClick={() => setViewImg(true)}
+            >
+              View all {property?.img?.length} pictures
             </button>
           </div>
 
@@ -115,14 +134,18 @@ const Detail = () => {
           <div className="col-span-2">
             <div className="font-semibold mb-4">MAP</div>
             <div className="w-full h-[calc(100vh_-_10rem)] mb-4">
-              <GoogleMapReact
-                bootstrapURLKeys={{ key: "" }}
-                defaultCenter={{
-                  lat: property?.map?.lat,
-                  lng: property?.map?.long,
-                }}
-                defaultZoom={11}
-              ></GoogleMapReact>
+              <iframe
+                src={`https://www.google.com/maps/embed?pb=${
+                  !property?.map?.embedId
+                    ? "!1m14!1m12!1m3!1d479.70156016309465!2d103.09487959339563!3d5.404162382706566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2smy!4v1722045100109!5m2!1sen!2smy"
+                    : property?.map?.embedId
+                }`}
+                width="100%"
+                height="100%"
+                allowfullscreen="true"
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+              ></iframe>
             </div>
             <div>
               <div className="font-semibold">DIRECTIONS</div>
@@ -203,12 +226,10 @@ const Detail = () => {
         </div>
 
         <div>
-          <div className="font-semibold mb-4">
-            More by {property?.agent?.name}
-          </div>
+          <div className="font-semibold mb-4">Similar to {property?.name}</div>
           <div className="grid grid-cols-4 gap-6">
-            {property?.others?.map((d, i) => {
-              return <Card key={i} others={d} owners={property} />;
+            {data?.slice(0, 4).map((d, i) => {
+              return <PropertyCard key={i} property={d} />;
             })}
           </div>
         </div>
@@ -218,36 +239,3 @@ const Detail = () => {
 };
 
 export default Detail;
-
-const Card = ({ others, owners }) => {
-  return (
-    <div className="card card-compact bg-base-100 shadow-xl rounded-md">
-      <figure>
-        <img
-          src="https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg?auto=compress&cs=tinysrgb&w=600"
-          alt="property"
-        />
-      </figure>
-      <div className="card-body">
-        <h2 className="card-title">
-          {others?.price} - {others?.size} Acres
-        </h2>
-        <p>{others?.address}</p>
-        <div className="card-actions justify-between items-center border-t pt-4 mt-3">
-          <div className="flex gap-2 items-center">
-            <div className="avatar">
-              <div className="w-10 rounded-full">
-                <img src={owners?.avatar} alt="Tailwind-CSS-Avatar-component" />
-              </div>
-            </div>
-            <div className="text-xs">
-              <div className="font-medium">{owners?.agent?.name}</div>
-              <div className="text-gray-400">{owners?.agent?.title}</div>
-            </div>
-          </div>
-          <button className="btn btn-sm btn-outline">Contact</button>
-        </div>
-      </div>
-    </div>
-  );
-};

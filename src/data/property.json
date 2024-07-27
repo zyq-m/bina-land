@@ -1,398 +1,434 @@
 [
   {
-    "id": "8c01480f-116f-4f9d-a8b9-d41c14f89c40",
-    "avatar": "https://avatars.githubusercontent.com/u/9997022",
-    "name": "Noah Gottlieb-Marks",
-    "price": "RM370864.00",
-    "size": 730,
-    "img": "https://images.pexels.com/photos/280222/pexels-photo-280222.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    "agent": {
-      "name": "Robyn Bernhard",
-      "title": "Senior Accountability Coordinator",
-      "phone": "438.728.3448 x95428"
-    },
-    "address": {
-      "address": "445 Castle Road",
-      "city": "Priceville",
-      "state": "Nebraska",
-      "zip": "16550-2093",
-      "country": "Kazakhstan"
-    },
-    "map": {
-      "long": 29.1518,
-      "lat": -77.9173,
-      "direction": "72721 Brakus Branch Lake Daphneystad"
-    },
-    "others": [
+    "id": "041f1f6c-001b-47c7-88df-d8cd3e8a128e",
+    "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1036.jpg",
+    "name": "Delores Brown",
+    "price": "RM8502508.00",
+    "size": 456,
+    "img": [
       {
-        "price": "RM70542.00",
-        "size": 331,
-        "address": "62605 McCullough Dale"
+        "src": "https://images.pexels.com/photos/280222/pexels-photo-280222.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
       },
-      { "price": "RM542360.00", "size": 773, "address": "938 Prudence Path" },
-      { "price": "RM823335.00", "size": 675, "address": "57274 Elm Street" },
-      { "price": "RM605328.00", "size": 631, "address": "5375 Poplar Avenue" }
-    ]
-  },
-  {
-    "id": "b56a0844-540f-4a6b-a336-9ec7b5d01099",
-    "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/63.jpg",
-    "name": "Byron Hauck",
-    "price": "RM377975.00",
-    "size": 104,
-    "img": "https://images.pexels.com/photos/534228/pexels-photo-534228.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    "agent": {
-      "name": "Rudy Hessel",
-      "title": "Human Assurance Representative",
-      "phone": "(209) 319-5206 x8702"
-    },
-    "address": {
-      "address": "376 Hamill Fork",
-      "city": "East Axelport",
-      "state": "Massachusetts",
-      "zip": "42171-3035",
-      "country": "Burundi"
-    },
-    "map": {
-      "long": -174.3387,
-      "lat": 5.4695,
-      "direction": "90122 Grady Heights Elgin"
-    },
-    "others": [
-      { "price": "RM134129.00", "size": 295, "address": "5160 The Grove" },
-      { "price": "RM639953.00", "size": 768, "address": "452 Fore Street" },
-      { "price": "RM756018.00", "size": 365, "address": "860 Jenkins Well" },
-      { "price": "RM497156.00", "size": 755, "address": "200 Strosin Wells" }
-    ]
-  },
-  {
-    "id": "6dcbf807-dacd-4c48-a811-39179e154f64",
-    "avatar": "https://avatars.githubusercontent.com/u/12574078",
-    "name": "Christy Dickens",
-    "price": "RM828777.00",
-    "size": 443,
-    "img": "https://images.pexels.com/photos/3958954/pexels-photo-3958954.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    "agent": {
-      "name": "Johnny Feil",
-      "title": "Direct Accountability Developer",
-      "phone": "474.824.4962 x084"
-    },
-    "address": {
-      "address": "6144 Rowe Ways",
-      "city": "Santee",
-      "state": "Montana",
-      "zip": "05541-5696",
-      "country": "French Guiana"
-    },
-    "map": {
-      "long": -58.8657,
-      "lat": -67.5739,
-      "direction": "244 Haley Spur Lake Maya"
-    },
-    "others": [
-      { "price": "RM640387.00", "size": 226, "address": "3552 Chapel Road" },
-      { "price": "RM161348.00", "size": 570, "address": "8882 South Street" },
-      { "price": "RM301960.00", "size": 616, "address": "34495 Quarry Lane" },
-      { "price": "RM374423.00", "size": 552, "address": "102 Madelynn Heights" }
-    ]
-  },
-  {
-    "id": "fa57bcd6-0bcc-4e67-b478-ffc0791b5e59",
-    "avatar": "https://avatars.githubusercontent.com/u/16177390",
-    "name": "Dr. Patrick Wisoky",
-    "price": "RM459222.00",
-    "size": 106,
-    "img": "https://images.pexels.com/photos/3958954/pexels-photo-3958954.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    "agent": {
-      "name": "Mr. Lloyd Nolan",
-      "title": "Regional Creative Supervisor",
-      "phone": "1-340-506-0227 x43341"
-    },
-    "address": {
-      "address": "5924 S Main Street",
-      "city": "Ellieside",
-      "state": "North Dakota",
-      "zip": "50829-2563",
-      "country": "Canada"
-    },
-    "map": {
-      "long": -77.6149,
-      "lat": 16.8994,
-      "direction": "586 Leopoldo Corners Metairie"
-    },
-    "others": [
-      { "price": "RM509940.00", "size": 332, "address": "5950 Padberg Plains" },
-      { "price": "RM369260.00", "size": 404, "address": "5322 Katrina Pike" },
-      { "price": "RM550109.00", "size": 271, "address": "248 Kessler River" },
-      { "price": "RM790043.00", "size": 791, "address": "91248 Tower Road" }
-    ]
-  },
-  {
-    "id": "9efab8ac-b9ab-44ed-9d4b-2c6c6144c1a2",
-    "avatar": "https://avatars.githubusercontent.com/u/72805912",
-    "name": "Viola Haley",
-    "price": "RM661898.00",
-    "size": 243,
-    "img": "https://images.pexels.com/photos/8288955/pexels-photo-8288955.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    "agent": {
-      "name": "Nathaniel Wunsch",
-      "title": "Principal Accounts Architect",
-      "phone": "(876) 765-3892"
-    },
-    "address": {
-      "address": "6698 Main Street N",
-      "city": "West Wilfredoworth",
-      "state": "Rhode Island",
-      "zip": "69582",
-      "country": "Switzerland"
-    },
-    "map": {
-      "long": 139.3252,
-      "lat": -26.7574,
-      "direction": "62752 Ursula Courts Mohrstad"
-    },
-    "others": [
-      { "price": "RM867911.00", "size": 366, "address": "6296 N Court Street" },
       {
-        "price": "RM846076.00",
-        "size": 41,
-        "address": "5495 W Central Avenue"
+        "src": "https://images.pexels.com/photos/5997992/pexels-photo-5997992.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
       },
-      { "price": "RM67447.00", "size": 357, "address": "4335 Ellen Summit" },
-      { "price": "RM326547.00", "size": 21, "address": "667 Anderson Lodge" }
-    ]
-  },
-  {
-    "id": "f156f2ef-46c2-47d4-8aab-5876cfabc191",
-    "avatar": "https://avatars.githubusercontent.com/u/16829226",
-    "name": "Jimmie Doyle",
-    "price": "RM971722.00",
-    "size": 15,
-    "img": "https://images.pexels.com/photos/3935320/pexels-photo-3935320.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      {
+        "src": "https://images.pexels.com/photos/5997994/pexels-photo-5997994.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      },
+      {
+        "src": "https://images.pexels.com/photos/5997994/pexels-photo-5997994.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      }
+    ],
     "agent": {
-      "name": "Martin Gleichner",
-      "title": "Regional Research Coordinator",
-      "phone": "1-780-415-1744"
+      "name": "Owen Friesen-Casper",
+      "title": "Corporate Web Orchestrator",
+      "phone": "1-411-373-8924 x737"
     },
     "address": {
-      "address": "75877 Mac Terrace",
-      "city": "Fort Nedra",
+      "address": "611 S Main Street",
+      "city": "Cutler Bay",
+      "state": "Illinois",
+      "zip": "24303-8816",
+      "country": "Cape Verde"
+    },
+    "map": { "embedId": "", "direction": "14470 Etha Drives East Gerda" }
+  },
+  {
+    "id": "50a0bf65-1a49-4fb6-9e6a-ceae419b9aac",
+    "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/298.jpg",
+    "name": "Tomas Hirthe V",
+    "price": "RM9680219.00",
+    "size": 582,
+    "img": [
+      {
+        "src": "https://images.pexels.com/photos/3935346/pexels-photo-3935346.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      },
+      {
+        "src": "https://images.pexels.com/photos/3935340/pexels-photo-3935340.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      },
+      {
+        "src": "https://images.pexels.com/photos/5997994/pexels-photo-5997994.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      },
+      {
+        "src": "https://images.pexels.com/photos/7027859/pexels-photo-7027859.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      }
+    ],
+    "agent": {
+      "name": "Joan McLaughlin",
+      "title": "National Identity Planner",
+      "phone": "990.637.8081 x39753"
+    },
+    "address": {
+      "address": "958 Bashirian Fall",
+      "city": "MacGyverview",
+      "state": "Minnesota",
+      "zip": "87072-9755",
+      "country": "Latvia"
+    },
+    "map": { "embedId": "", "direction": "9848 Kihn Track Mobile" }
+  },
+  {
+    "id": "30c93a47-a289-4b66-b174-7e8ed42e4e63",
+    "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/815.jpg",
+    "name": "Abel Bauch",
+    "price": "RM7297890.00",
+    "size": 457,
+    "img": [
+      {
+        "src": "https://images.pexels.com/photos/4258282/pexels-photo-4258282.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      },
+      {
+        "src": "https://images.pexels.com/photos/5997992/pexels-photo-5997992.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      },
+      {
+        "src": "https://images.pexels.com/photos/5997994/pexels-photo-5997994.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      },
+      {
+        "src": "https://images.pexels.com/photos/5997994/pexels-photo-5997994.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      }
+    ],
+    "agent": {
+      "name": "Mr. Alvin Rau",
+      "title": "National Branding Consultant",
+      "phone": "(258) 679-7874 x81781"
+    },
+    "address": {
+      "address": "10979 Howard Road",
+      "city": "Adamstad",
       "state": "Maine",
-      "zip": "87453",
-      "country": "Martinique"
+      "zip": "84111",
+      "country": "Tanzania"
     },
-    "map": {
-      "long": 112.449,
-      "lat": -58.08,
-      "direction": "56942 Walter Roads Markton"
-    },
-    "others": [
-      { "price": "RM313837.00", "size": 308, "address": "896 Rupert Fords" },
-      { "price": "RM901386.00", "size": 537, "address": "29265 Jarrod Corner" },
-      { "price": "RM615513.00", "size": 249, "address": "99734 Park View" },
-      { "price": "RM802349.00", "size": 666, "address": "330 Moor Lane" }
-    ]
+    "map": { "embedId": "", "direction": "2823 Pedro Crescent Port Maximillia" }
   },
   {
-    "id": "21795767-3867-4b85-a85f-883155e44c21",
-    "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/547.jpg",
-    "name": "Otis Will",
-    "price": "RM499343.00",
-    "size": 451,
-    "img": "https://images.pexels.com/photos/8082332/pexels-photo-8082332.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    "agent": {
-      "name": "Brandi Labadie",
-      "title": "Chief Accountability Designer",
-      "phone": "(661) 819-7495"
-    },
-    "address": {
-      "address": "46172 College Avenue",
-      "city": "Karleefurt",
-      "state": "Michigan",
-      "zip": "20017",
-      "country": "Papua New Guinea"
-    },
-    "map": {
-      "long": -90.1106,
-      "lat": -4.0484,
-      "direction": "9452 County Road St. Charles"
-    },
-    "others": [
-      { "price": "RM171186.00", "size": 320, "address": "6483 West Shore" },
-      { "price": "RM51644.00", "size": 609, "address": "104 Madison Street" },
+    "id": "eec157df-cb1f-4987-b655-f655be646294",
+    "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/315.jpg",
+    "name": "Julian Collins",
+    "price": "RM2097419.00",
+    "size": 153,
+    "img": [
       {
-        "price": "RM286211.00",
-        "size": 40,
-        "address": "31192 Hettinger Corners"
+        "src": "https://images.pexels.com/photos/209274/pexels-photo-209274.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
       },
-      { "price": "RM386512.00", "size": 534, "address": "21918 Justice Camp" }
-    ]
-  },
-  {
-    "id": "70280f56-d4cc-4779-9534-d9f0d701e69a",
-    "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/425.jpg",
-    "name": "Clint Erdman",
-    "price": "RM147801.00",
-    "size": 208,
-    "img": "https://images.pexels.com/photos/3935333/pexels-photo-3935333.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    "agent": {
-      "name": "Eva Dooley",
-      "title": "Central Intranet Orchestrator",
-      "phone": "934-223-2604 x6451"
-    },
-    "address": {
-      "address": "68629 Sanford Avenue",
-      "city": "Anabellecester",
-      "state": "Montana",
-      "zip": "16228-8519",
-      "country": "Serbia"
-    },
-    "map": {
-      "long": 35.9426,
-      "lat": 37.3888,
-      "direction": "570 Nils Manor Nyasiaborough"
-    },
-    "others": [
-      { "price": "RM782950.00", "size": 200, "address": "22221 W Elm Street" },
-      { "price": "RM76381.00", "size": 115, "address": "54701 The Lane" },
-      { "price": "RM899040.00", "size": 92, "address": "780 Grimes Springs" },
-      { "price": "RM650157.00", "size": 597, "address": "167 Chestnut Drive" }
-    ]
-  },
-  {
-    "id": "55b4d0d0-ac80-4385-b278-043f817234f9",
-    "avatar": "https://avatars.githubusercontent.com/u/61401374",
-    "name": "Melody Okuneva",
-    "price": "RM94865.00",
-    "size": 641,
-    "img": "https://images.pexels.com/photos/11018238/pexels-photo-11018238.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    "agent": {
-      "name": "Jonathan Kunde",
-      "title": "Dynamic Communications Producer",
-      "phone": "1-250-810-6202 x7308"
-    },
-    "address": {
-      "address": "7949 6th Avenue",
-      "city": "Lehnertown",
-      "state": "Connecticut",
-      "zip": "16892-3781",
-      "country": "Gambia"
-    },
-    "map": {
-      "long": -1.9497,
-      "lat": 7.5594,
-      "direction": "6837 Armstrong Lock Lake Aron"
-    },
-    "others": [
       {
-        "price": "RM453181.00",
-        "size": 470,
-        "address": "36164 Katharina Circles"
+        "src": "https://images.pexels.com/photos/5997992/pexels-photo-5997992.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
       },
-      { "price": "RM751643.00", "size": 315, "address": "9702 Windsor Avenue" },
       {
-        "price": "RM208613.00",
-        "size": 101,
-        "address": "31191 Norris Overpass"
+        "src": "https://images.pexels.com/photos/5997994/pexels-photo-5997994.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
       },
-      { "price": "RM771265.00", "size": 368, "address": "113 Hilll Land" }
-    ]
-  },
-  {
-    "id": "0ff52676-5320-4b09-a50d-7e5111e8caa0",
-    "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/509.jpg",
-    "name": "Janet Ryan",
-    "price": "RM607080.00",
-    "size": 256,
-    "img": "https://images.pexels.com/photos/9952001/pexels-photo-9952001.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    "agent": {
-      "name": "Alexis Adams",
-      "title": "Dynamic Applications Assistant",
-      "phone": "502.528.4830"
-    },
-    "address": {
-      "address": "3127 Jaqueline Cape",
-      "city": "Pierceborough",
-      "state": "New Mexico",
-      "zip": "54814",
-      "country": "Montserrat"
-    },
-    "map": {
-      "long": 13.3066,
-      "lat": -31.791,
-      "direction": "6013 South Avenue Ransombury"
-    },
-    "others": [
-      { "price": "RM339562.00", "size": 140, "address": "140 Riverside Drive" },
-      { "price": "RM518856.00", "size": 582, "address": "138 Kaycee Lock" },
-      { "price": "RM75500.00", "size": 756, "address": "4326 Beverly Village" },
-      { "price": "RM144223.00", "size": 670, "address": "334 Lincoln Street" }
-    ]
-  },
-  {
-    "id": "0abeafa2-d36b-450a-89b9-f52935d0f724",
-    "avatar": "https://avatars.githubusercontent.com/u/14349651",
-    "name": "Samuel Wolff",
-    "price": "RM222658.00",
-    "size": 259,
-    "img": "https://images.pexels.com/photos/816198/pexels-photo-816198.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    "agent": {
-      "name": "Carla Howe",
-      "title": "Corporate Interactions Assistant",
-      "phone": "(631) 293-1055 x14197"
-    },
-    "address": {
-      "address": "64090 Lincoln Highway",
-      "city": "Sheldonton",
-      "state": "Nevada",
-      "zip": "01960-2543",
-      "country": "San Marino"
-    },
-    "map": {
-      "long": 106.9637,
-      "lat": 3.9441,
-      "direction": "7234 Mallory Neck Lake Judd"
-    },
-    "others": [
-      { "price": "RM411955.00", "size": 75, "address": "138 N Pearl Street" },
-      { "price": "RM332546.00", "size": 181, "address": "34188 Libby Locks" },
       {
-        "price": "RM268399.00",
-        "size": 677,
-        "address": "31116 Fairfield Road"
-      },
-      { "price": "RM628176.00", "size": 702, "address": "1445 High Road" }
-    ]
-  },
-  {
-    "id": "3b208c05-b33c-4d1a-ac08-6f7461aa9e7b",
-    "avatar": "https://avatars.githubusercontent.com/u/14061560",
-    "name": "Malcolm Sauer",
-    "price": "RM527752.00",
-    "size": 629,
-    "img": "https://images.pexels.com/photos/9890979/pexels-photo-9890979.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "src": "https://images.pexels.com/photos/5997994/pexels-photo-5997994.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      }
+    ],
     "agent": {
-      "name": "Ana Hagenes",
-      "title": "Forward Usability Administrator",
-      "phone": "867.745.7158"
+      "name": "Miss Lana Frami",
+      "title": "District Usability Administrator",
+      "phone": "422-236-1778 x18937"
     },
     "address": {
-      "address": "90171 Ward Mews",
-      "city": "West Roslyn",
-      "state": "Georgia",
-      "zip": "10928",
+      "address": "85253 Walter Cliff",
+      "city": "Hermannworth",
+      "state": "Delaware",
+      "zip": "13926-9675",
+      "country": "Niue"
+    },
+    "map": { "embedId": "", "direction": "200 6th Street North Gunner" }
+  },
+  {
+    "id": "c9629b1f-bc23-4852-ab3a-90c1ff5e894e",
+    "avatar": "https://avatars.githubusercontent.com/u/59237343",
+    "name": "Dr. Neil Robel",
+    "price": "RM2065739.00",
+    "size": 660,
+    "img": [
+      {
+        "src": "https://images.pexels.com/photos/9459187/pexels-photo-9459187.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      },
+      {
+        "src": "https://images.pexels.com/photos/5997992/pexels-photo-5997992.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      },
+      {
+        "src": "https://images.pexels.com/photos/5997994/pexels-photo-5997994.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      },
+      {
+        "src": "https://images.pexels.com/photos/5997994/pexels-photo-5997994.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      }
+    ],
+    "agent": {
+      "name": "Raquel Koch",
+      "title": "Customer Accountability Developer",
+      "phone": "351.777.2724 x9715"
+    },
+    "address": {
+      "address": "1610 Turner Station",
+      "city": "Brandtview",
+      "state": "Arkansas",
+      "zip": "11238",
+      "country": "Georgia"
+    },
+    "map": { "embedId": "", "direction": "58270 Earl Square Altenwerthton" }
+  },
+  {
+    "id": "8b4ef765-69b4-432f-b495-35aacd25ca89",
+    "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/926.jpg",
+    "name": "Wilson Hilpert",
+    "price": "RM8560169.00",
+    "size": 391,
+    "img": [
+      {
+        "src": "https://images.pexels.com/photos/3958954/pexels-photo-3958954.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      },
+      {
+        "src": "https://images.pexels.com/photos/5997992/pexels-photo-5997992.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      },
+      {
+        "src": "https://images.pexels.com/photos/5997994/pexels-photo-5997994.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      },
+      {
+        "src": "https://images.pexels.com/photos/5997994/pexels-photo-5997994.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      }
+    ],
+    "agent": {
+      "name": "Kathryn Blanda",
+      "title": "Regional Research Facilitator",
+      "phone": "329-368-3038 x849"
+    },
+    "address": {
+      "address": "40132 Stephany Flat",
+      "city": "Dooleyview",
+      "state": "Alabama",
+      "zip": "39358",
+      "country": "United Arab Emirates"
+    },
+    "map": { "embedId": "", "direction": "82293 Schaden Viaduct Folsom" }
+  },
+  {
+    "id": "d4b5b4a2-491b-4d9d-945d-0e8ead013aa9",
+    "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/335.jpg",
+    "name": "Walter Huels",
+    "price": "RM4574309.00",
+    "size": 749,
+    "img": [
+      {
+        "src": "https://images.pexels.com/photos/1396132/pexels-photo-1396132.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      },
+      {
+        "src": "https://images.pexels.com/photos/5997992/pexels-photo-5997992.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      },
+      {
+        "src": "https://images.pexels.com/photos/5997994/pexels-photo-5997994.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      },
+      {
+        "src": "https://images.pexels.com/photos/5997994/pexels-photo-5997994.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      }
+    ],
+    "agent": {
+      "name": "Beulah Paucek",
+      "title": "Lead Paradigm Supervisor",
+      "phone": "1-403-318-4101 x18050"
+    },
+    "address": {
+      "address": "4816 Wiley Skyway",
+      "city": "Arlington Heights",
+      "state": "Kansas",
+      "zip": "30449",
+      "country": "Albania"
+    },
+    "map": { "embedId": "", "direction": "343 Torp Green Port Rollinmouth" }
+  },
+  {
+    "id": "3601ed60-1509-4e77-9974-1cb5d63884b9",
+    "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1041.jpg",
+    "name": "Luz Russel",
+    "price": "RM9203662.00",
+    "size": 345,
+    "img": [
+      {
+        "src": "https://images.pexels.com/photos/8031883/pexels-photo-8031883.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      },
+      {
+        "src": "https://images.pexels.com/photos/5997992/pexels-photo-5997992.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      },
+      {
+        "src": "https://images.pexels.com/photos/5997994/pexels-photo-5997994.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      },
+      {
+        "src": "https://images.pexels.com/photos/5997994/pexels-photo-5997994.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      }
+    ],
+    "agent": {
+      "name": "Teri Nitzsche",
+      "title": "Central Usability Strategist",
+      "phone": "(414) 660-2973 x139"
+    },
+    "address": {
+      "address": "92932 Effertz Trace",
+      "city": "Fort Jodie",
+      "state": "Ohio",
+      "zip": "60156",
       "country": "Mauritius"
     },
-    "map": {
-      "long": 73.9853,
-      "lat": -30.1777,
-      "direction": "512 Weissnat Manor Armandoboro"
+    "map": { "embedId": "", "direction": "97892 Lucio Cape Karlboro" }
+  },
+  {
+    "id": "dd662e7a-aa8f-49e6-868b-03019362df09",
+    "avatar": "https://avatars.githubusercontent.com/u/73990885",
+    "name": "Sophia Bahringer",
+    "price": "RM3293118.00",
+    "size": 754,
+    "img": [
+      {
+        "src": "https://images.pexels.com/photos/280222/pexels-photo-280222.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      },
+      {
+        "src": "https://images.pexels.com/photos/5997992/pexels-photo-5997992.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      },
+      {
+        "src": "https://images.pexels.com/photos/5997994/pexels-photo-5997994.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      },
+      {
+        "src": "https://images.pexels.com/photos/5997994/pexels-photo-5997994.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      }
+    ],
+    "agent": {
+      "name": "Norma Kunze",
+      "title": "Global Intranet Orchestrator",
+      "phone": "260.753.6352 x1114"
     },
-    "others": [
-      { "price": "RM448488.00", "size": 418, "address": "942 Riverside Drive" },
-      { "price": "RM888019.00", "size": 97, "address": "4375 Kiehn Pine" },
-      { "price": "RM706854.00", "size": 733, "address": "3057 Batz Run" },
-      { "price": "RM725691.00", "size": 74, "address": "7145 Merle Inlet" }
-    ]
+    "address": {
+      "address": "20525 Chestnut Close",
+      "city": "Schmelercester",
+      "state": "Oregon",
+      "zip": "06588",
+      "country": "Ghana"
+    },
+    "map": { "embedId": "", "direction": "73567 Hoppe Estates Koeppstad" }
+  },
+  {
+    "id": "7007d4cf-1eec-4ac7-8ec2-72bbdf1789e5",
+    "avatar": "https://avatars.githubusercontent.com/u/19847842",
+    "name": "Corner Lot Double Storey",
+    "price": "RM6902987.00",
+    "size": 2280,
+    "img": [
+      {
+        "src": "https://scontent.fkul19-3.fna.fbcdn.net/v/t39.30808-6/452818125_7911061525598006_444115977824186591_n.jpg?stp=dst-jpg_p720x720&_nc_cat=101&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=34Q9Po-mJoUQ7kNvgHKbOHg&_nc_ht=scontent.fkul19-3.fna&oh=00_AYAr5MriOUtjLVV7JkClnFGzrGzZ2fgTLVhXrwUfeDxNsw&oe=66AA437E"
+      },
+      {
+        "src": "https://scontent.fkul19-3.fna.fbcdn.net/v/t39.30808-6/452888898_7911061538931338_3906907183312932115_n.jpg?stp=dst-jpg_p720x720&_nc_cat=103&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=zE7wbzdkE4sQ7kNvgGsziak&_nc_ht=scontent.fkul19-3.fna&oh=00_AYBipOAqDALBJx5LYyxyW8517EqY1Stj_jAGEFIkRvH7Ew&oe=66AA4559"
+      },
+      {
+        "src": "https://scontent.fkul19-3.fna.fbcdn.net/v/t39.30808-6/452876243_7911061528931339_2905238186844014168_n.jpg?stp=dst-jpg_p720x720&_nc_cat=103&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=vwXL82KkZRsQ7kNvgG4NWSh&_nc_ht=scontent.fkul19-3.fna&oh=00_AYAqMygST_q11gGA2bJF_ARIQKZxKTp4n7Wco2e0ILZOUA&oe=66AA51B6"
+      },
+      {
+        "src": "https://scontent.fkul19-2.fna.fbcdn.net/v/t39.30808-6/452944118_7911061518931340_78504964502074807_n.jpg?stp=dst-jpg_p720x720&_nc_cat=109&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=Hy0p2MLmEXQQ7kNvgEvqO8P&_nc_ht=scontent.fkul19-2.fna&oh=00_AYAGjEqU07sz3SbXISGA11wTPRNT5BvI4RAyr8dg4eezBg&oe=66AA46BE"
+      },
+      {
+        "src": "https://scontent.fkul19-1.fna.fbcdn.net/v/t39.30808-6/452817249_7911061475598011_6489461314567781737_n.jpg?stp=dst-jpg_p720x720&_nc_cat=106&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=F_Wh7fGUkV0Q7kNvgHZBJ58&_nc_ht=scontent.fkul19-1.fna&oh=00_AYD47JxjM8WPqDui_wuRGJRXwHJEe9yJcfPWIhE1bKpBxw&oe=66AA3BC9"
+      },
+      {
+        "src": "https://scontent.fkul19-3.fna.fbcdn.net/v/t39.30808-6/453002650_7911061532264672_3016575604510766959_n.jpg?stp=dst-jpg_p720x720&_nc_cat=108&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=niI4lhGD184Q7kNvgHAlqXt&_nc_ht=scontent.fkul19-3.fna&oh=00_AYDsdVe6Nt4BVxQ-ohGfmbhJsVMRF-NdJcavjBW2k4Drww&oe=66AA5287"
+      },
+      {
+        "src": "https://scontent.fkul19-1.fna.fbcdn.net/v/t39.30808-6/452882508_7911061478931344_7516425734068634154_n.jpg?stp=dst-jpg_p720x720&_nc_cat=105&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=J1eKt8lvpjIQ7kNvgHiGKJK&_nc_ht=scontent.fkul19-1.fna&oh=00_AYD-KyUfmVdzMhOccfjKVpt0g9ypOMAkETazIeKP8oIqnQ&oe=66AA4577"
+      },
+      {
+        "src": "https://scontent.fkul19-1.fna.fbcdn.net/v/t39.30808-6/452957381_7911061515598007_8730482286060966379_n.jpg?stp=dst-jpg_p720x720&_nc_cat=104&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=VztKVrvFclYQ7kNvgFXQjD5&_nc_ht=scontent.fkul19-1.fna&oh=00_AYCt8wJOiKE2QTUksrTgvFLQE52xV3rZ6W1ZxdmOtGEwRw&oe=66AA2632"
+      },
+      {
+        "src": "https://scontent.fkul19-1.fna.fbcdn.net/v/t39.30808-6/452701480_7911061535598005_5438298191836493294_n.jpg?stp=dst-jpg_p720x720&_nc_cat=110&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=4lxwglFnYqwQ7kNvgE5m_s-&_nc_ht=scontent.fkul19-1.fna&oh=00_AYCNb5v0ArmNN5zsAlXYz4ggsxNdLh-cPbK54MNldvXRyQ&oe=66AA4EA1"
+      },
+      {
+        "src": "https://scontent.fkul19-1.fna.fbcdn.net/v/t39.30808-6/452893820_7911061522264673_175513926195428119_n.jpg?stp=dst-jpg_p720x720&_nc_cat=110&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=g7Pedb8paCIQ7kNvgE6uctF&_nc_ht=scontent.fkul19-1.fna&oh=00_AYAl47inU29-duejaMUK-UVrBu6JUfqMYYhsPsdKL7ppdQ&oe=66AA4FE3"
+      }
+    ],
+    "agent": {
+      "name": "Barbara Little",
+      "title": "Legacy Interactions Assistant",
+      "phone": "204-706-2663 x3162"
+    },
+    "address": {
+      "address": "TTDI Jaya",
+      "city": "Shah Alam",
+      "state": "Malaysia",
+      "zip": "211990",
+      "country": "Selangor"
+    },
+    "map": {
+      "embedId": "!1m18!1m12!1m3!1d7698.207159712764!2d101.54893509054105!3d3.1005500375001493!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc4dc46d286c5f%3A0x4c2d894ee62a0c8c!2sTTDI%20Jaya%2C%2040150%20Shah%20Alam%2C%20Selangor!5e1!3m2!1sen!2smy!4v1722051044854!5m2!1sen!2smy",
+      "direction": "TTDI Jaya"
+    }
+  },
+  {
+    "id": "7fbc4255-98dc-4220-80cc-199b76b8bbc3",
+    "avatar": "https://avatars.githubusercontent.com/u/59483943",
+    "name": "Lamar Bednar-Trantow",
+    "price": "RM2951867.00",
+    "size": 299,
+    "img": [
+      {
+        "src": "https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      },
+      {
+        "src": "https://images.pexels.com/photos/5997992/pexels-photo-5997992.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      },
+      {
+        "src": "https://images.pexels.com/photos/5997994/pexels-photo-5997994.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      },
+      {
+        "src": "https://images.pexels.com/photos/5997994/pexels-photo-5997994.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      }
+    ],
+    "agent": {
+      "name": "Joel Pouros",
+      "title": "Regional Branding Strategist",
+      "phone": "312.262.0596 x2000"
+    },
+    "address": {
+      "address": "310 Antwan Place",
+      "city": "Beavercreek",
+      "state": "Nebraska",
+      "zip": "64672",
+      "country": "Bosnia and Herzegovina"
+    },
+    "map": { "embedId": "", "direction": "3448 Elton Rest Lake Lemuelfort" }
+  },
+  {
+    "id": "02119487-6d1a-4dda-a731-2df5c3faaa22",
+    "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/856.jpg",
+    "name": "Tanah Lot Untuk Dijual",
+    "price": "RM115000.00",
+    "size": 635,
+    "img": [
+      {
+        "src": "https://scontent.fkul19-2.fna.fbcdn.net/v/t39.30808-6/452888896_8632369340122929_2820246510775100650_n.jpg?stp=dst-jpg_p180x540&_nc_cat=111&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=XK8TD67dHIQQ7kNvgFoYBIn&_nc_ht=scontent.fkul19-2.fna&oh=00_AYDKKqhNqrO8JUdWMY6bbn9TVDEcI4yBF-zXhdAwxdI2-Q&oe=66AA250B"
+      },
+      {
+        "src": "https://scontent.fkul19-2.fna.fbcdn.net/v/t39.30808-6/453004784_8632370410122822_5768792072615640004_n.jpg?stp=dst-jpg_p180x540&_nc_cat=100&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=G6qcrLJxMTIQ7kNvgEqLVe9&_nc_ht=scontent.fkul19-2.fna&oh=00_AYBPtot0irbwtiwcalcprRDY91fMcUlqzJ4_wnXfWWpsJA&oe=66AA14F8"
+      },
+      {
+        "src": "https://scontent.fkul19-1.fna.fbcdn.net/v/t39.30808-6/452976156_8632371066789423_4516160811065696364_n.jpg?stp=dst-jpg_s960x960&_nc_cat=110&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=tmysiIomLBIQ7kNvgHm9FNx&_nc_ht=scontent.fkul19-1.fna&oh=00_AYDLfV_VbHT8DPlVoQi4-_aNCietSK1YUbD7MPaM4mCHpA&oe=66AA277D"
+      },
+      {
+        "src": "https://scontent.fkul19-3.fna.fbcdn.net/v/t39.30808-6/453065844_8632370046789525_6740767398856890474_n.jpg?stp=dst-jpg_s960x960&_nc_cat=108&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=w9YcvZfEZvgQ7kNvgEtc2zN&_nc_ht=scontent.fkul19-3.fna&oh=00_AYBKUAYdoufQxz1qHC-mGViLOKC8ZEgSMSZkRAZlcyBwCA&oe=66AA2903"
+      }
+    ],
+    "agent": {
+      "name": "Stephen Mueller-Bruen",
+      "title": "Regional Directives Consultant",
+      "phone": "(957) 748-0072"
+    },
+    "address": {
+      "address": "Kampung Beladau Kepung",
+      "city": "Kuala Terengganu",
+      "state": "Malaysia",
+      "zip": "21070",
+      "country": "Terengganu"
+    },
+    "map": {
+      "embedId": "!1m18!1m12!1m3!1d1919.2153195169428!2d103.07999295125369!3d5.273463910408836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31b7bf4b7b7bbdd9%3A0x73c67323f9a1887a!2sKampung%20Beladau%20Kepung%2C%2021070%20Kuala%20Terengganu%2C%20Terengganu!5e1!3m2!1sen!2smy!4v1722046028449!5m2!1sen!2smy",
+      "direction": "Kampung Beladau Kepung"
+    }
   }
 ]

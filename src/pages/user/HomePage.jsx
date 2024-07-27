@@ -1,10 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Layout, PropertyCard, SearchBar } from "../../components";
-
-import data from "../../data/property.json";
+import { usePropertyStore } from "../../hooks";
 
 const HomePage = () => {
+  const data = usePropertyStore((s) => s.property);
+
   return (
     <Layout>
       {/* Header */}
