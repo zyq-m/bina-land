@@ -3,19 +3,13 @@ import data from "../data/property.json";
 
 const usePropertyStore = create((set) => ({
   property: data,
-  update: (country) =>
+  update: (state) =>
     set((s) => {
-      const selected = s.property.filter(
-        (d) => d.address.country.toLowerCase() == country
-      )[0];
-      const remaining = s.property.filter(
-        (d) => d.address.country.toLowerCase() !== country
+      const filterState = s.property.filter(
+        (item) => item.address.state.toLowerCase() === state
       );
-
-      remaining.unshift(selected);
-
       return {
-        property: remaining,
+        property: filterState,
       };
     }),
 }));

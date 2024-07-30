@@ -1,31 +1,24 @@
+import data from "../../data/property.json";
 import React, { useEffect, useState } from "react";
 import { Layout, PropertyCard } from "../../components";
-
-import data from "../../data/property.json";
 
 const MyShortListed = () => {
   const [property, setProperty] = useState([]);
 
   useEffect(() => {
-    const fetch = data.slice(2, 7);
-    setProperty(fetch);
+    const fetchShortlisted = data.slice(2, 7);
+    setProperty(fetchShortlisted);
   }, []);
+
   return (
     <Layout>
-      <div className="py-10 bg-[#FFE7E3] mb-6">
+      <div className="py-10 bg-slate-200 mb-6">
         <div className="max-w-screen-xl mx-auto flex justify-between items-center">
           <div>
-            <h1 className="text-3xl font-bold">My Shorlisted</h1>
+            <h1 className="text-3xl font-bold">My Shortlisted</h1>
             <p className="text-sm">
               Manage potential shortlisted property & more
             </p>
-          </div>
-          <div>
-            <img
-              src="/icon_dasdasdsadas-removebg-preview.png"
-              alt=""
-              className="w-36"
-            />
           </div>
         </div>
       </div>
@@ -41,9 +34,9 @@ const MyShortListed = () => {
           </select>
         </div>
         <div className="grid grid-cols-3 gap-8">
-          {property?.map((d, i) => {
-            return <PropertyCard key={i} property={d} />;
-          })}
+          {property.map((propertyItem, index) => (
+            <PropertyCard key={index} property={propertyItem} />
+          ))}
         </div>
       </div>
     </Layout>

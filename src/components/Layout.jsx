@@ -2,102 +2,112 @@ import React from "react";
 import { Link, NavLink } from "react-router-dom";
 
 const NAV = [
-  {
-    link: "/",
-    label: "Home",
-  },
-  {
-    link: "/list",
-    label: "Explore Property",
-  },
-  {
-    link: "/about",
-    label: "About Us",
-  },
-  {
-    link: "/staff",
-    label: "Our Staff",
-  },
+  { link: "/", label: "Home" },
+  { link: "/list", label: "Explore Property" },
+  { link: "/about", label: "About Us" },
+  { link: "/staff", label: "Our Staff" },
 ];
 
 const Layout = ({ children }) => {
   return (
     <>
-      <nav className="navbar bg-base-100">
-        <div className="flex-1">
-          <Link
-            to="/"
-            className="flex items-center gap-2 px-2 text-2xl font-bold"
-          >
-            <img src="/logo.jpg" alt="logo" className="w-8 rounded-full" />
-            BinaLand
-          </Link>
-
-          <ul className="flex gap-5 ml-6 font-medium">
-            {NAV.map((d, i) => {
-              return (
-                <li key={i}>
+      {/* Navbar */}
+      <div>
+        <nav className="navbar px-52 py-6 shadow-lg">
+          <div className="flex-1">
+            <Link
+              to="/"
+              className="flex items-center gap-2 px-2 text-2xl font-bold"
+            >
+              <img src="/logo.png" alt="logo" className="w-32" />
+            </Link>
+            <ul className="flex gap-5 ml-6 font-semibold text-lg">
+              {NAV.map((navItem, index) => (
+                <li key={index}>
                   <NavLink
-                    to={d.link}
+                    to={navItem.link}
                     className={({ isActive }) =>
-                      isActive ? "border-b-[#FF5A3C] border-b-2 pb-1" : ""
+                      isActive ? "border-blue-500 border-b-2 pb-1" : ""
                     }
                   >
-                    {d.label}
+                    {navItem.label}
                   </NavLink>
                 </li>
-              );
-            })}
-          </ul>
-        </div>
-        <div className="flex-none">
-          <div className="flex gap-4 items-center">
-            <div className="dropdown dropdown-end">
-              <div
-                tabIndex={0}
-                role="button"
-                className="btn btn-ghost btn-circle avatar"
-              >
-                <div className="w-10 rounded-full">
-                  <img
-                    alt="Tailwind CSS Navbar component"
-                    src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp"
-                  />
+              ))}
+            </ul>
+          </div>
+          <div>
+            <div className="flex-none">
+              <div className="flex gap-4 items-center">
+                <div className="dropdown dropdown-end">
+                  <div
+                    tabIndex={0}
+                    role="button"
+                    className="btn btn-ghost btn-circle avatar"
+                  >
+                    <div className="w-10 rounded-full">
+                      <img
+                        alt="User Avatar"
+                        src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp"
+                      />
+                    </div>
+                  </div>
+                  <ul
+                    tabIndex={0}
+                    className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+                  >
+                    <li>
+                      <Link to="/profile" className="justify-between">
+                        Profile
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="/shortlisted" className="justify-between">
+                        My Shortlisted
+                        <div className="badge p-3 badge-xl bg-blue-500 text-base-100">
+                          6
+                        </div>
+                      </Link>
+                    </li>
+                    <li>
+                      <a>Logout</a>
+                    </li>
+                  </ul>
                 </div>
               </div>
-              <ul
-                tabIndex={0}
-                className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
-              >
-                <li>
-                  <Link to="/profile" className="justify-between">
-                    Profile
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/shortlisted" className="justify-between">
-                    My Shortlisted
-                    <div className="badge badge-xs bg-[#FF5A3C] text-base-100">
-                      6
-                    </div>
-                  </Link>
-                </li>
-                <li>
-                  <a>Logout</a>
-                </li>
-              </ul>
             </div>
           </div>
-        </div>
-      </nav>
+        </nav>
+      </div>
 
-      <main className="bg-[#F2F6F7]">{children}</main>
+      {/* Content */}
+      <main className="bg-[#f1f3f3]">{children}</main>
 
-      <footer className="footer bg-neutral text-neutral-content items-center p-4">
-        <aside className="grid-flow-col items-center">
-          <p>Copyright © {new Date().getFullYear()} - All right reserved</p>
-        </aside>
-      </footer>
+      {/* Footer */}
+      <div className="px-52 py-12 bg-neutral">
+        <footer className="footer text-neutral-content p-10">
+          <nav>
+            <h6 className="footer-title">Services</h6>
+            <a className="link link-hover">Branding</a>
+            <a className="link link-hover">Design</a>
+            <a className="link link-hover">Marketing</a>
+            <a className="link link-hover">Advertisement</a>
+          </nav>
+          <nav>
+            <h6 className="footer-title">Company</h6>
+            <a className="link link-hover">About us</a>
+            <a className="link link-hover">Contact</a>
+            <a className="link link-hover">Jobs</a>
+            <a className="link link-hover">Press kit</a>
+          </nav>
+          <nav>
+            <h6 className="footer-title">Legal</h6>
+            <a className="link link-hover">Terms of use</a>
+            <a className="link link-hover">Privacy policy</a>
+            <a className="link link-hover">Cookie policy</a>
+          </nav>
+        </footer>
+      </div>
     </>
   );
 };

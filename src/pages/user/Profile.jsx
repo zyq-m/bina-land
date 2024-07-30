@@ -104,7 +104,7 @@ const Profile = () => {
 
         {/* Button */}
         <div>
-          <button className="btn bg-[#FF5A3C] px-14 text-lg text-white mt-8">
+          <button className="btn bg-blue-500 px-14 text-lg text-white mt-8">
             Save Changes
           </button>
         </div>

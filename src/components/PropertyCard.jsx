@@ -1,7 +1,6 @@
 import React from "react";
-import FavoriteOutlinedIcon from "@mui/icons-material/FavoriteOutlined";
-import FavoriteBorderOutlined from "@mui/icons-material/FavoriteBorderOutlined";
 import { Link } from "react-router-dom";
+import FavoriteBorderOutlined from "@mui/icons-material/FavoriteBorderOutlined";
 
 const PropertyCard = ({ property }) => {
   return (
@@ -21,13 +20,13 @@ const PropertyCard = ({ property }) => {
         <h2 className="card-title justify-between items-center">
           {property?.name}
           <button>
-            <FavoriteBorderOutlined className="hover:text-red-500" />
+            <FavoriteBorderOutlined className="hover:text-blue-500" />
           </button>
         </h2>
         <p>
           {property?.address?.city}, {property?.address?.state}
         </p>
-        <p className="font-bold text-[#FF5A3C]">{property?.price}</p>
+        <p className="font-bold text-blue-500">{property?.price}</p>
       </div>
     </div>
   );
