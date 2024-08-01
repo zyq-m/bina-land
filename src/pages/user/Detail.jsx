@@ -1,7 +1,7 @@
-import { useEffect, useState } from "react";
-import { Layout, PropertyCard } from "../../components";
+import React, { useEffect, useState } from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import { Layout, PropertyCard } from "../../components";
 
 import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlined";
 import ReplyOutlinedIcon from "@mui/icons-material/ReplyOutlined";
@@ -15,9 +15,9 @@ const Detail = () => {
   const data = usePropertyStore((s) => s.property);
 
   useEffect(() => {
-    const fetch = data.filter((d) => d.id == id)[0];
+    const fetch = data.find((d) => d.id == id);
     setProperty(fetch);
-  }, [id]);
+  }, [id, data]);
 
   if (viewImg) {
     return (
@@ -29,22 +29,23 @@ const Detail = () => {
           ✕
         </button>
         <Carousel
-          infinite={true}
+          infinite
           responsive={{
             desktop: {
               breakpoint: { max: 3000, min: 1024 },
               items: 1,
-              slidesToSlide: 1,
             },
           }}
         >
-          {property?.img?.map((d, i) => {
-            return (
-              <div key={i} className="h-screen grid place-content-center">
-                <img src={d?.src} className="mx-auto" />
-              </div>
-            );
-          })}
+          {property?.img?.map((d, i) => (
+            <div key={i} className="h-screen grid place-content-center">
+              <img
+                src={d?.src}
+                className="mx-auto"
+                alt={`Property image ${i}`}
+              />
+            </div>
+          ))}
         </Carousel>
       </div>
     );
@@ -53,9 +54,9 @@ const Detail = () => {
   return (
     <Layout>
       <div className="max-w-screen-xl mx-auto pb-12">
-        <div className="grid gap-8 grid-flow-row-dense grid-row-4 grid-cols-3 mb-8 pt-8">
+        <div className="grid gap-8 grid-cols-3 mb-8 pt-8">
           <div className="col-span-2">
-            <div className="text-xl text-[#FF5A3C] font-bold">
+            <div className="text-xl text-blue-500 font-bold">
               {property?.price} - {property?.size} square feet
             </div>
             <div className="flex justify-between">
@@ -77,13 +78,15 @@ const Detail = () => {
 
           <div className="col-span-2 relative">
             <div className="carousel space-x-1 rounded-lg">
-              {property?.img?.map((d, i) => {
-                return (
-                  <div key={i} className="carousel-item">
-                    <img src={d?.src} className="w-full" />
-                  </div>
-                );
-              })}
+              {property?.img?.map((d, i) => (
+                <div key={i} className="carousel-item">
+                  <img
+                    src={d?.src}
+                    className="w-full"
+                    alt={`Property image ${i}`}
+                  />
+                </div>
+              ))}
             </div>
             <button
               className="btn btn-sm absolute bottom-6 left-6 rounded-full"
@@ -136,13 +139,12 @@ const Detail = () => {
             <div className="w-full h-[calc(100vh_-_10rem)] mb-4">
               <iframe
                 src={`https://www.google.com/maps/embed?pb=${
-                  !property?.map?.embedId
-                    ? "!1m14!1m12!1m3!1d479.70156016309465!2d103.09487959339563!3d5.404162382706566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2smy!4v1722045100109!5m2!1sen!2smy"
-                    : property?.map?.embedId
+                  property?.map?.embedId ||
+                  "!1m14!1m12!1m3!1d479.70156016309465!2d103.09487959339563!3d5.404162382706566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2smy!4v1722045100109!5m2!1sen!2smy"
                 }`}
                 width="100%"
                 height="100%"
-                allowfullscreen="true"
+                allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
               ></iframe>
@@ -162,7 +164,7 @@ const Detail = () => {
                 src="https://www.youtube.com/embed/cEHMIPT9vcs?si=C9n77vQOIWwkQyb2"
                 title="YouTube video player"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen
+                allowFullScreen
                 className="w-full h-full absolute"
               ></iframe>
             </div>
@@ -173,7 +175,7 @@ const Detail = () => {
               <div className="flex items-center gap-4 mb-4">
                 <div className="avatar">
                   <div className="w-24 rounded-full">
-                    <img src={property?.avatar} />
+                    <img src={property?.avatar} alt="Agent" />
                   </div>
                 </div>
                 <div>
@@ -205,7 +207,7 @@ const Detail = () => {
                   className="textarea textarea-bordered"
                   placeholder="Message"
                 ></textarea>
-                <button type="button" className="btn bg-[#FF5A3C] text-white">
+                <button type="button" className="btn bg-blue-500 text-white">
                   Contact Staff
                 </button>
               </form>
@@ -228,9 +230,9 @@ const Detail = () => {
         <div>
           <div className="font-semibold mb-4">Similar to {property?.name}</div>
           <div className="grid grid-cols-4 gap-6">
-            {data?.slice(0, 4).map((d, i) => {
-              return <PropertyCard key={i} property={d} />;
-            })}
+            {data.slice(0, 4).map((d, i) => (
+              <PropertyCard key={i} property={d} />
+            ))}
           </div>
         </div>
       </div>

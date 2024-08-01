@@ -49,7 +49,7 @@ const SearchBar = () => {
         />
         <button
           type="submit"
-          className="px-6 btn bg-[#FF5A3C] text-white"
+          className="px-6 ml-3 btn bg-blue-600 text-white"
           onClick={onSearch}
         >
           Search
