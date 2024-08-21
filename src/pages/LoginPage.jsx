@@ -1,5 +1,5 @@
 import { useForm } from "react-hook-form";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Login = () => {
   const {
@@ -10,6 +10,7 @@ const Login = () => {
 
   // Functions
   const onSubmit = (data) => console.log(data);
+  const navigate = useNavigate();
 
   return (
     <>
@@ -72,12 +73,16 @@ const Login = () => {
                     type="submit"
                     className="flex-1 btn mr-2 bg-blue-600 text-white"
                     value="Login"
+                    onClick={() => navigate("/home")}
                   >
-                    <Link to="/">Login</Link>
+                    Login
                   </button>
 
-                  <button className="btn flex-1 bg-white shadow-sm text-blue-600">
-                    <Link to="/register">Create Profile</Link>
+                  <button
+                    className="btn flex-1 bg-white shadow-sm text-blue-600"
+                    onClick={() => navigate("/register")}
+                  >
+                    Create Profile
                   </button>
                 </div>
               </div>

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 
 const NAV = [
-  { link: "/", label: "Home" },
+  { link: "/home", label: "Home" },
   { link: "/list", label: "Explore Property" },
   { link: "/about", label: "About Us" },
   // { link: "/staff", label: "Our Staff" },
@@ -26,7 +26,7 @@ const Layout = ({ children }) => {
         <nav className="navbar py-6 max-w-screen-xl mx-auto px-4">
           <div className="flex-1">
             <Link
-              to="/"
+              to="/home"
               className="flex items-center gap-2 px-2 text-2xl font-bold"
             >
               <img src="/logo.png" alt="logo" className="w-32" />
@@ -82,7 +82,7 @@ const Layout = ({ children }) => {
                       </Link>
                     </li>
                     <li>
-                      <a>Logout</a>
+                      <Link to="/">Logout</Link>
                     </li>
                   </ul>
                 </div>

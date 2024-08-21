@@ -7,11 +7,11 @@ import * as Page from "./pages";
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/home",
     element: <Page.HomePage />,
   },
   {
-    path: "/login",
+    path: "/",
     element: <Page.Login />,
   },
   {

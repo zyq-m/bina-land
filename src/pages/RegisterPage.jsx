@@ -1,5 +1,5 @@
 import { useForm } from "react-hook-form";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Register = () => {
   const {
@@ -11,6 +11,7 @@ const Register = () => {
 
   // Functions
   const onSubmit = (data) => console.log(data);
+  const navigate = useNavigate();
 
   return (
     <>
@@ -127,11 +128,15 @@ const Register = () => {
                     type="submit"
                     className="btn flex-1 mr-2 bg-blue-600 text-white"
                     value="Register"
+                    onClick={() => navigate("/")}
                   >
                     Register
                   </button>
-                  <button className="btn flex-1 bg-white shadow-sm text-blue-600">
-                    <Link to="/login">Cancel</Link>
+                  <button
+                    className="btn flex-1 bg-white shadow-sm text-blue-600"
+                    onClick={() => navigate("/")}
+                  >
+                    Cancel
                   </button>
                 </div>
               </div>
