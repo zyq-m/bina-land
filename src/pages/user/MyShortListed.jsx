@@ -17,7 +17,7 @@ const MyShortListed = () => {
   return (
     <Layout>
       <div className="py-10 bg-slate-200 mb-6">
-        <div className="max-w-screen-xl mx-auto flex justify-between items-center">
+        <div className="max-w-screen-xl mx-auto flex justify-between items-center px-4">
           <div>
             <h1 className="text-3xl font-bold">My Shortlisted</h1>
             <p className="text-sm">
@@ -27,7 +27,7 @@ const MyShortListed = () => {
         </div>
       </div>
 
-      <div className="max-w-screen-xl mx-auto pb-12">
+      <div className="max-w-screen-xl mx-auto pb-12 px-4">
         <div className="flex justify-end mb-4">
           <select className="select select-bordered">
             <option disabled selected>
