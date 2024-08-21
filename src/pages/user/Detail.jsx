@@ -6,7 +6,6 @@ import { usePropertyStore } from "../../hooks";
 import { Layout, PropertyCard } from "../../components";
 
 // Icons
-import ReplyOutlinedIcon from "@mui/icons-material/ReplyOutlined";
 import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlined";
 import ReplyOutlinedIcon from "@mui/icons-material/ReplyOutlined";
 import SupportAgentIcon from "@mui/icons-material/SupportAgent";
