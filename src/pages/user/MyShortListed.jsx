@@ -6,8 +6,12 @@ const MyShortListed = () => {
   const [property, setProperty] = useState([]);
 
   useEffect(() => {
-    const fetchShortlisted = data.slice(2, 7);
-    setProperty(fetchShortlisted);
+    const fetchShortlisted = localStorage.getItem("wishlist");
+    if (!fetchShortlisted) {
+      setProperty([]);
+      return;
+    }
+    setProperty(JSON.parse(fetchShortlisted));
   }, []);
 
   return (
@@ -38,6 +42,11 @@ const MyShortListed = () => {
             <PropertyCard key={index} property={propertyItem} />
           ))}
         </div>
+        {!property.length && (
+          <div className="grid place-items-center min-h-[calc(100vh-41rem)]">
+            No shortlisted yet
+          </div>
+        )}
       </div>
     </Layout>
   );
