@@ -44,6 +44,7 @@ const HomePage = () => {
           <SearchBar />
         </div>
       </div>
+
       {/* Featured Listings */}
       <div className="max-w-screen-xl mx-auto px-4 py-28">
         <div className="text-center text-3xl font-bold">Featured Listings</div>
@@ -53,6 +54,7 @@ const HomePage = () => {
           ))}
         </div>
       </div>
+
       {/* Trusted Real Estate Advisors */}
       <div className="bg-base-100 py-20">
         <div className="grid grid-cols-2 gap-16 mt-6 max-w-screen-xl mx-auto px-4">
@@ -92,6 +94,7 @@ const HomePage = () => {
           </div>
         </div>
       </div>
+
       {/* About Use */}
       <div className="max-w-screen-xl mx-auto px-4 py-28">
         <div className="flex justify-between">
