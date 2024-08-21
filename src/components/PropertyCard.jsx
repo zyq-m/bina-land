@@ -2,7 +2,26 @@ import React from "react";
 import { Link } from "react-router-dom";
 import FavoriteBorderOutlined from "@mui/icons-material/FavoriteBorderOutlined";
 
+const money = new Intl.NumberFormat("ms-MY", {
+  style: "currency",
+  currency: "MYR",
+});
+
 const PropertyCard = ({ property }) => {
+  const storeWishlist = (obj) => {
+    const wishList = localStorage.getItem("wishlist");
+
+    if (!wishList) {
+      localStorage.setItem("wishlist", JSON.stringify([obj]));
+      return;
+    }
+
+    const wishArr = JSON.parse(wishList);
+    !wishArr.filter((i) => i.id == property.id).length && wishArr.push(obj);
+
+    localStorage.setItem("wishlist", JSON.stringify(wishArr));
+  };
+
   return (
     <div className="card card-compact bg-base-100 shadow-md overflow-hidden rounded-lg p-2">
       <div className="relative w-full pb-2/3">
@@ -23,12 +42,16 @@ const PropertyCard = ({ property }) => {
       <div className="card-body">
         <div className="flex justify-between items-center">
           <h2 className="card-title">{property?.name}</h2>
-          <button>
+          <button onClick={() => storeWishlist(property)}>
             <FavoriteBorderOutlined className="hover:text-blue-500" />
           </button>
         </div>
-        <p>{property?.address?.city}, {property?.address?.state}</p>
-        <p className="font-bold text-blue-500">{property?.price}</p>
+        <p>
+          {property?.address?.city}, {property?.address?.state}
+        </p>
+        <p className="font-bold text-blue-500">
+          {money.format(property?.price)}
+        </p>
       </div>
     </div>
   );

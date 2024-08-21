@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 
 const NAV = [
@@ -9,11 +9,21 @@ const NAV = [
 ];
 
 const Layout = ({ children }) => {
+  const [wishlist, setWishList] = useState(0);
+
+  useEffect(() => {
+    const wishList = localStorage.getItem("wishlist");
+    if (!wishList) {
+      return;
+    }
+    setWishList(JSON.parse(wishList).length);
+  }, []);
+
   return (
     <>
       {/* Navbar */}
-      <div>
-        <nav className="navbar px-52 py-6 shadow-lg">
+      <div className="shadow-lg">
+        <nav className="navbar py-6 max-w-screen-xl mx-auto px-4">
           <div className="flex-1">
             <Link
               to="/"
@@ -64,9 +74,11 @@ const Layout = ({ children }) => {
                     <li>
                       <Link to="/shortlisted" className="justify-between">
                         My Shortlisted
-                        <div className="badge p-3 badge-xl bg-blue-500 text-base-100">
-                          6
-                        </div>
+                        {wishlist > 0 && (
+                          <div className="badge p-3 badge-xl bg-blue-500 text-base-100">
+                            {wishlist}
+                          </div>
+                        )}
                       </Link>
                     </li>
                     <li>
@@ -84,8 +96,8 @@ const Layout = ({ children }) => {
       <main className="bg-[#f1f3f3]">{children}</main>
 
       {/* Footer */}
-      <div className="px-52 py-12 bg-neutral">
-        <footer className="footer text-neutral-content p-10">
+      <div className="bg-neutral">
+        <footer className="footer max-w-screen-xl mx-auto text-neutral-content py-10 px-4">
           <nav>
             <h6 className="footer-title">Services</h6>
             <a className="link link-hover">Branding</a>

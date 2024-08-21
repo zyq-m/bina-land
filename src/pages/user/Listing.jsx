@@ -4,11 +4,9 @@ import { usePropertyStore } from "../../hooks";
 const Listing = () => {
   const data = usePropertyStore((s) => s.property);
 
-  console.log(data);
-
   return (
     <Layout>
-      <div className="max-w-screen-xl mx-auto pt-12 pb-12">
+      <div className="max-w-screen-xl mx-auto pt-12 pb-12 px-4 min-h-[calc(100vh-19rem)]">
         <SearchBar />
 
         <div className="grid grid-cols-3 gap-8">
