@@ -5,7 +5,7 @@ const NAV = [
   { link: "/", label: "Home" },
   { link: "/list", label: "Explore Property" },
   { link: "/about", label: "About Us" },
-  { link: "/staff", label: "Our Staff" },
+  // { link: "/staff", label: "Our Staff" },
 ];
 
 const Layout = ({ children }) => {

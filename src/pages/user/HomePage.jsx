@@ -3,6 +3,12 @@ import { Link } from "react-router-dom";
 import { usePropertyStore } from "../../hooks";
 import { Layout, PropertyCard, SearchBar } from "../../components";
 
+// Icons
+import EqualizerIcon from "@mui/icons-material/Equalizer";
+import ContactPageIcon from "@mui/icons-material/ContactPage";
+import SupportAgentIcon from "@mui/icons-material/SupportAgent";
+import HealthAndSafetyIcon from "@mui/icons-material/HealthAndSafety";
+
 const HomePage = () => {
   const data = usePropertyStore((s) => s.property);
 
@@ -61,24 +67,24 @@ const HomePage = () => {
             <div className="grid grid-cols-2 gap-5 mt-5">
               <div className="py-5 pl-6 rounded-xl">
                 <p className="text-3xl font-bold">17K+</p>
-                <p className="mt-6 text-lg font-semibold">Property Theme</p>
+                <p className="mt-3 text-lg font-semibold">Property Theme</p>
               </div>
 
               <div className="bg-blue-600 py-6 pl-4 rounded-xl">
                 <p className="text-3xl font-bold text-white">25+</p>
-                <p className="mt-6 text-lg text-white font-semibold">
+                <p className="mt-3 text-lg text-white font-semibold">
                   Year of Experience
                 </p>
               </div>
 
               <div className="bg-gray-200 py-6 pl-4 rounded-xl">
                 <p className="text-3xl font-bold">150+</p>
-                <p className="mt-6 text-lg font-semibold">Award Winning</p>
+                <p className="mt-3 text-lg font-semibold">Award Winning</p>
               </div>
 
               <div className="bg-gray-200 py-6 pl-4 rounded-xl">
                 <p className="text-3xl font-bold">25+</p>
-                <p className="mt-6 text-lg font-semibold">
+                <p className="mt-3 text-lg font-semibold">
                   Property Collection
                 </p>
               </div>
@@ -97,38 +103,79 @@ const HomePage = () => {
 
       {/* About Use */}
       <div className="px-20 py-28">
-          <div className="flex justify-between">
-            <div>
-                <p className="text-blue-600 font-bold">EHM, SO?</p>
-                <p className="font-bold text-5xl mt-2">What we do</p>
-                <p className="font-bold text-lg mt-2">Full-Service Agents, Modern Technology</p>
-            </div>
-
-            <div>
-              <div className="px-5 py-2 bg-blue-200 rounded-xl">
-                <p className="text-blue-600 font-bold">See More</p>
-              </div>
-            </div>
+        <div className="flex justify-between">
+          <div>
+            <p className="text-blue-600 font-bold">EHM, SO?</p>
+            <p className="font-bold text-5xl mt-2">What we do</p>
+            <p className="font-bold text-lg mt-2">
+              Full-Service Agents, Modern Technology
+            </p>
           </div>
 
-          <div className="grid grid-cols-4 gap-5 mt-10 text-center">
-              <div className="py-5 px-10 bg-white rounded-xl">
-                <p className="font-semibold">Communication</p>
-                <p>Single Point of Contact, in sync with the tool you use, we speak your</p>
-              </div>
-              <div className="py-5 px-10 bg-white rounded-xl">
-                <p className="font-semibold">Communication</p>
-                <p>Single Point of Contact, in sync with the tool you use, we speak your</p>
-              </div>
-              <div className="py-5 px-10 bg-white rounded-xl">
-                <p className="font-semibold">Communication</p>
-                <p>Single Point of Contact, in sync with the tool you use, we speak your</p>
-              </div>
-              <div className="py-5 px-10 bg-white rounded-xl">
-                <p className="font-semibold">Communication</p>
-                <p>Single Point of Contact, in sync with the tool you use, we speak your</p>
-              </div>
+          <div>
+            <div className="px-5 py-2 bg-blue-200 rounded-xl">
+              <p className="text-blue-600 font-bold">See More</p>
+            </div>
           </div>
+        </div>
+
+        <div className="grid grid-cols-4 gap-5 mt-10 text-center">
+          <div className="py-5 px-10 bg-white rounded-xl">
+            <div className="text-6xl mb-6">
+              <SupportAgentIcon
+                fontSize="inherit"
+                className="p-3 text-blue-600 bg-blue-200 rounded-full"
+              />
+            </div>
+            <p className="font-semibold">Communication</p>
+            <p>
+              Single Point of Contact, in sync with the tool you use, we speak
+              your.
+            </p>
+          </div>
+
+          <div className="py-5 px-10 bg-white rounded-xl">
+            <div className="text-6xl mb-6">
+              <HealthAndSafetyIcon
+                fontSize="inherit"
+                className="p-3 text-blue-600 bg-blue-200 rounded-full"
+              />
+            </div>
+            <p className="font-semibold">Reliability</p>
+            <p>
+              We keep out promises, provide upfront timelines and bring
+              pridictability.
+            </p>
+          </div>
+
+          <div className="py-5 px-10 bg-white rounded-xl">
+            <div className="text-6xl mb-6">
+              <EqualizerIcon
+                fontSize="inherit"
+                className="p-3 text-blue-600 bg-blue-200 rounded-full"
+              />
+            </div>
+            <p className="font-semibold">Quality First</p>
+            <p>
+              Quality first All Projects are booked our fanatic support 100%
+              statisfaction guarantee.
+            </p>
+          </div>
+
+          <div className="py-5 px-10 bg-white rounded-xl">
+            <div className="text-6xl mb-6">
+              <ContactPageIcon
+                fontSize="inherit"
+                className="p-3 text-blue-600 bg-blue-200 rounded-full"
+              />
+            </div>
+            <p className="font-semibold">Families</p>
+            <p>
+              Rent a beautiful house for your family. Choose from in sociaties
+              and individual apartment.
+            </p>
+          </div>
+        </div>
       </div>
     </Layout>
   );
