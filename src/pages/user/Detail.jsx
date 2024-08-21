@@ -1,18 +1,23 @@
-import React, { useEffect, useState } from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import { Layout, PropertyCard } from "../../components";
-
-import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlined";
-import ReplyOutlinedIcon from "@mui/icons-material/ReplyOutlined";
 import { useParams } from "react-router-dom";
 import { usePropertyStore } from "../../hooks";
+import React, { useEffect, useState } from "react";
+import { Layout, PropertyCard } from "../../components";
+
+// Icons
+import ReplyOutlinedIcon from "@mui/icons-material/ReplyOutlined";
+import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlined";
 
 const Detail = () => {
   const { id } = useParams();
   const [property, setProperty] = useState({});
   const [viewImg, setViewImg] = useState(false);
   const data = usePropertyStore((s) => s.property);
+  const money = new Intl.NumberFormat("ms-MY", {
+    style: "currency",
+    currency: "MYR",
+  });
 
   useEffect(() => {
     const fetch = data.find((d) => d.id == id);
@@ -57,7 +62,7 @@ const Detail = () => {
         <div className="grid gap-8 grid-cols-3 mb-8 pt-8">
           <div className="col-span-2">
             <div className="text-xl text-blue-500 font-bold">
-              {property?.price} - {property?.size} square feet
+              {money.format(property?.price)} - {property?.size} square feet
             </div>
             <div className="flex justify-between">
               <div className="capitalize">
