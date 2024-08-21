@@ -305,61 +305,7 @@
     },
     "map": { "embedId": "", "direction": "73567 Hoppe Estates Koeppstad" }
   },
-  {
-    "id": "7007d4cf-1eec-4ac7-8ec2-72bbdf1789e5",
-    "avatar": "https://avatars.githubusercontent.com/u/19847842",
-    "name": "Corner Lot Double Storey",
-    "price": "RM6902987.00",
-    "size": 2280,
-    "img": [
-      {
-        "src": "https://scontent.fkul19-3.fna.fbcdn.net/v/t39.30808-6/452818125_7911061525598006_444115977824186591_n.jpg?stp=dst-jpg_p720x720&_nc_cat=101&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=34Q9Po-mJoUQ7kNvgHKbOHg&_nc_ht=scontent.fkul19-3.fna&oh=00_AYAr5MriOUtjLVV7JkClnFGzrGzZ2fgTLVhXrwUfeDxNsw&oe=66AA437E"
-      },
-      {
-        "src": "https://scontent.fkul19-3.fna.fbcdn.net/v/t39.30808-6/452888898_7911061538931338_3906907183312932115_n.jpg?stp=dst-jpg_p720x720&_nc_cat=103&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=zE7wbzdkE4sQ7kNvgGsziak&_nc_ht=scontent.fkul19-3.fna&oh=00_AYBipOAqDALBJx5LYyxyW8517EqY1Stj_jAGEFIkRvH7Ew&oe=66AA4559"
-      },
-      {
-        "src": "https://scontent.fkul19-3.fna.fbcdn.net/v/t39.30808-6/452876243_7911061528931339_2905238186844014168_n.jpg?stp=dst-jpg_p720x720&_nc_cat=103&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=vwXL82KkZRsQ7kNvgG4NWSh&_nc_ht=scontent.fkul19-3.fna&oh=00_AYAqMygST_q11gGA2bJF_ARIQKZxKTp4n7Wco2e0ILZOUA&oe=66AA51B6"
-      },
-      {
-        "src": "https://scontent.fkul19-2.fna.fbcdn.net/v/t39.30808-6/452944118_7911061518931340_78504964502074807_n.jpg?stp=dst-jpg_p720x720&_nc_cat=109&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=Hy0p2MLmEXQQ7kNvgEvqO8P&_nc_ht=scontent.fkul19-2.fna&oh=00_AYAGjEqU07sz3SbXISGA11wTPRNT5BvI4RAyr8dg4eezBg&oe=66AA46BE"
-      },
-      {
-        "src": "https://scontent.fkul19-1.fna.fbcdn.net/v/t39.30808-6/452817249_7911061475598011_6489461314567781737_n.jpg?stp=dst-jpg_p720x720&_nc_cat=106&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=F_Wh7fGUkV0Q7kNvgHZBJ58&_nc_ht=scontent.fkul19-1.fna&oh=00_AYD47JxjM8WPqDui_wuRGJRXwHJEe9yJcfPWIhE1bKpBxw&oe=66AA3BC9"
-      },
-      {
-        "src": "https://scontent.fkul19-3.fna.fbcdn.net/v/t39.30808-6/453002650_7911061532264672_3016575604510766959_n.jpg?stp=dst-jpg_p720x720&_nc_cat=108&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=niI4lhGD184Q7kNvgHAlqXt&_nc_ht=scontent.fkul19-3.fna&oh=00_AYDsdVe6Nt4BVxQ-ohGfmbhJsVMRF-NdJcavjBW2k4Drww&oe=66AA5287"
-      },
-      {
-        "src": "https://scontent.fkul19-1.fna.fbcdn.net/v/t39.30808-6/452882508_7911061478931344_7516425734068634154_n.jpg?stp=dst-jpg_p720x720&_nc_cat=105&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=J1eKt8lvpjIQ7kNvgHiGKJK&_nc_ht=scontent.fkul19-1.fna&oh=00_AYD-KyUfmVdzMhOccfjKVpt0g9ypOMAkETazIeKP8oIqnQ&oe=66AA4577"
-      },
-      {
-        "src": "https://scontent.fkul19-1.fna.fbcdn.net/v/t39.30808-6/452957381_7911061515598007_8730482286060966379_n.jpg?stp=dst-jpg_p720x720&_nc_cat=104&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=VztKVrvFclYQ7kNvgFXQjD5&_nc_ht=scontent.fkul19-1.fna&oh=00_AYCt8wJOiKE2QTUksrTgvFLQE52xV3rZ6W1ZxdmOtGEwRw&oe=66AA2632"
-      },
-      {
-        "src": "https://scontent.fkul19-1.fna.fbcdn.net/v/t39.30808-6/452701480_7911061535598005_5438298191836493294_n.jpg?stp=dst-jpg_p720x720&_nc_cat=110&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=4lxwglFnYqwQ7kNvgE5m_s-&_nc_ht=scontent.fkul19-1.fna&oh=00_AYCNb5v0ArmNN5zsAlXYz4ggsxNdLh-cPbK54MNldvXRyQ&oe=66AA4EA1"
-      },
-      {
-        "src": "https://scontent.fkul19-1.fna.fbcdn.net/v/t39.30808-6/452893820_7911061522264673_175513926195428119_n.jpg?stp=dst-jpg_p720x720&_nc_cat=110&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=g7Pedb8paCIQ7kNvgE6uctF&_nc_ht=scontent.fkul19-1.fna&oh=00_AYAl47inU29-duejaMUK-UVrBu6JUfqMYYhsPsdKL7ppdQ&oe=66AA4FE3"
-      }
-    ],
-    "agent": {
-      "name": "Barbara Little",
-      "title": "Legacy Interactions Assistant",
-      "phone": "010-17261231"
-    },
-    "address": {
-      "address": "TTDI Jaya",
-      "city": "Kemaman",
-      "state": "Terengganu",
-      "zip": "211990",
-      "country": "Malaysia"
-    },
-    "map": {
-      "embedId": "!1m18!1m12!1m3!1d87992.76758675577!2d103.27786923663845!3d4.0888625057680565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31c88fa8c3f196e5%3A0x3b7c3c4fcb8fc55e!2sChukai%2C%20Terengganu!5e0!3m2!1sen!2smy!4v1722172430077!5m2!1sen!2smy",
-      "direction": "TTDI Jaya"
-    }
-  },
+ 
   {
     "id": "7fbc4255-98dc-4220-80cc-199b76b8bbc3",
     "avatar": "https://avatars.githubusercontent.com/u/59483943",
@@ -393,42 +339,6 @@
       "country": "Malaysia"
     },
     "map": { "embedId": "", "direction": "3448 Elton Rest Lake Lemuelfort" }
-  },
-  {
-    "id": "02119487-6d1a-4dda-a731-2df5c3faaa22",
-    "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/856.jpg",
-    "name": "Tanah Lot Untuk Dijual",
-    "price": "RM115000.00",
-    "size": 635,
-    "img": [
-      {
-        "src": "https://scontent.fkul19-2.fna.fbcdn.net/v/t39.30808-6/452888896_8632369340122929_2820246510775100650_n.jpg?stp=dst-jpg_p180x540&_nc_cat=111&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=XK8TD67dHIQQ7kNvgFoYBIn&_nc_ht=scontent.fkul19-2.fna&oh=00_AYDKKqhNqrO8JUdWMY6bbn9TVDEcI4yBF-zXhdAwxdI2-Q&oe=66AA250B"
-      },
-      {
-        "src": "https://scontent.fkul19-2.fna.fbcdn.net/v/t39.30808-6/453004784_8632370410122822_5768792072615640004_n.jpg?stp=dst-jpg_p180x540&_nc_cat=100&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=G6qcrLJxMTIQ7kNvgEqLVe9&_nc_ht=scontent.fkul19-2.fna&oh=00_AYBPtot0irbwtiwcalcprRDY91fMcUlqzJ4_wnXfWWpsJA&oe=66AA14F8"
-      },
-      {
-        "src": "https://scontent.fkul19-1.fna.fbcdn.net/v/t39.30808-6/452976156_8632371066789423_4516160811065696364_n.jpg?stp=dst-jpg_s960x960&_nc_cat=110&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=tmysiIomLBIQ7kNvgHm9FNx&_nc_ht=scontent.fkul19-1.fna&oh=00_AYDLfV_VbHT8DPlVoQi4-_aNCietSK1YUbD7MPaM4mCHpA&oe=66AA277D"
-      },
-      {
-        "src": "https://scontent.fkul19-3.fna.fbcdn.net/v/t39.30808-6/453065844_8632370046789525_6740767398856890474_n.jpg?stp=dst-jpg_s960x960&_nc_cat=108&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=w9YcvZfEZvgQ7kNvgEtc2zN&_nc_ht=scontent.fkul19-3.fna&oh=00_AYBKUAYdoufQxz1qHC-mGViLOKC8ZEgSMSZkRAZlcyBwCA&oe=66AA2903"
-      }
-    ],
-    "agent": {
-      "name": "Stephen Mueller-Bruen",
-      "title": "Regional Directives Consultant",
-      "phone": "(957) 748-0072"
-    },
-    "address": {
-      "address": "Kampung Beladau Kepung",
-      "city": "Kuala Terengganu",
-      "state": "Terengganu",
-      "zip": "21070",
-      "country": "Malaysia"
-    },
-    "map": {
-      "embedId": "!1m18!1m12!1m3!1d1919.2153195169428!2d103.07999295125369!3d5.273463910408836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31b7bf4b7b7bbdd9%3A0x73c67323f9a1887a!2sKampung%20Beladau%20Kepung%2C%2021070%20Kuala%20Terengganu%2C%20Terengganu!5e1!3m2!1sen!2smy!4v1722046028449!5m2!1sen!2smy",
-      "direction": "Kampung Beladau Kepung"
-    }
   }
+  
 ]

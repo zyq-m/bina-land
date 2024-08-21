@@ -3,6 +3,12 @@ import { Link } from "react-router-dom";
 import { usePropertyStore } from "../../hooks";
 import { Layout, PropertyCard, SearchBar } from "../../components";
 
+// Icons
+import EqualizerIcon from "@mui/icons-material/Equalizer";
+import ContactPageIcon from "@mui/icons-material/ContactPage";
+import SupportAgentIcon from "@mui/icons-material/SupportAgent";
+import HealthAndSafetyIcon from "@mui/icons-material/HealthAndSafety";
+
 const HomePage = () => {
   const data = usePropertyStore((s) => s.property);
 
@@ -28,7 +34,7 @@ const HomePage = () => {
             </p>
             <Link
               to="/list"
-              className="btn bg-blue-600 border-blue-600 px-12 py-2 text-base text-white rounded "
+              className="btn bg-blue-600 border-blue-600 px-12 py-2 text-base text-white rounded"
             >
               Explore Now
             </Link>
@@ -42,48 +48,132 @@ const HomePage = () => {
       </div>
 
       {/* Featured Listings */}
-      <div className=" px-52 py-28">
+      <div className="px-20 py-28">
         <div className="text-center text-3xl font-bold">Featured Listings</div>
-        <div className="mt-16 grid grid-cols-4 gap-10">
-          {data.slice(0, 8).map((d, i) => (
+        <div className="mt-16 grid grid-cols-4 gap-5">
+          {data.slice(0, 4).map((d, i) => (
             <PropertyCard key={i} property={d} />
           ))}
         </div>
       </div>
 
-      {/* About Us */}
-      <div className="bg-base-100 py-36 px-52">
-        <div className="grid grid-cols-2 gap-32">
+      {/* Trusted Real Estate Advisors */}
+      <div className="bg-base-100 py-20 px-52">
+        <div className="grid grid-cols-2 gap-16 mt-6">
+          <div>
+            <p className="text-5xl font-bold">
+              Your Trusted Real Estate Advisors.
+            </p>
+            <div className="grid grid-cols-2 gap-5 mt-5">
+              <div className="py-5 pl-6 rounded-xl">
+                <p className="text-3xl font-bold">17K+</p>
+                <p className="mt-3 text-lg font-semibold">Property Theme</p>
+              </div>
+
+              <div className="bg-blue-600 py-6 pl-4 rounded-xl">
+                <p className="text-3xl font-bold text-white">25+</p>
+                <p className="mt-3 text-lg text-white font-semibold">
+                  Year of Experience
+                </p>
+              </div>
+
+              <div className="bg-gray-200 py-6 pl-4 rounded-xl">
+                <p className="text-3xl font-bold">150+</p>
+                <p className="mt-3 text-lg font-semibold">Award Winning</p>
+              </div>
+
+              <div className="bg-gray-200 py-6 pl-4 rounded-xl">
+                <p className="text-3xl font-bold">25+</p>
+                <p className="mt-3 text-lg font-semibold">
+                  Property Collection
+                </p>
+              </div>
+            </div>
+          </div>
+
           <div>
             <img
               src="/backGround-image.jpg"
               alt="About Us"
-              className="h-[500px] rounded-lg"
+              className="h-full rounded-lg"
             />
           </div>
+        </div>
+      </div>
 
-          <div className="grid content-center">
-            <div>
-              <p className="mb-1 text-5xl font-bold">The Leading Real Estate</p>
-              <p className="mb-2 text-5xl font-bold">
-                Rental Marketplace
-                <span className="text-4xl font-bold text-blue-500">.</span>
-              </p>
-              <p className="mb-2 text-lg">
-                At our real estate platform, we believe that every property is a
-                gateway to a brighter future. Our mission is to guide you in
-                finding the perfect fit, whether you’re in search of a tranquil
-                residential retreat or a dynamic commercial space. We strive to
-                help you discover the ideal property that aligns with your
-                vision and goals.
-              </p>
-              <Link
-                to="/about"
-                className="btn bg-blue-200 px-14 py-2 text-lg text-blue-600 rounded-xl"
-              >
-                About Us
-              </Link>
+      {/* About Use */}
+      <div className="px-20 py-28">
+        <div className="flex justify-between">
+          <div>
+            <p className="text-blue-600 font-bold">EHM, SO?</p>
+            <p className="font-bold text-5xl mt-2">What we do</p>
+            <p className="font-bold text-lg mt-2">
+              Full-Service Agents, Modern Technology
+            </p>
+          </div>
+
+          <div>
+            <div className="px-5 py-2 bg-blue-200 rounded-xl">
+              <p className="text-blue-600 font-bold">See More</p>
             </div>
+          </div>
+        </div>
+
+        <div className="grid grid-cols-4 gap-5 mt-10 text-center">
+          <div className="py-5 px-10 bg-white rounded-xl">
+            <div className="text-6xl mb-6">
+              <SupportAgentIcon
+                fontSize="inherit"
+                className="p-3 text-blue-600 bg-blue-200 rounded-full"
+              />
+            </div>
+            <p className="font-semibold">Communication</p>
+            <p>
+              Single Point of Contact, in sync with the tool you use, we speak
+              your.
+            </p>
+          </div>
+
+          <div className="py-5 px-10 bg-white rounded-xl">
+            <div className="text-6xl mb-6">
+              <HealthAndSafetyIcon
+                fontSize="inherit"
+                className="p-3 text-blue-600 bg-blue-200 rounded-full"
+              />
+            </div>
+            <p className="font-semibold">Reliability</p>
+            <p>
+              We keep out promises, provide upfront timelines and bring
+              pridictability.
+            </p>
+          </div>
+
+          <div className="py-5 px-10 bg-white rounded-xl">
+            <div className="text-6xl mb-6">
+              <EqualizerIcon
+                fontSize="inherit"
+                className="p-3 text-blue-600 bg-blue-200 rounded-full"
+              />
+            </div>
+            <p className="font-semibold">Quality First</p>
+            <p>
+              Quality first All Projects are booked our fanatic support 100%
+              statisfaction guarantee.
+            </p>
+          </div>
+
+          <div className="py-5 px-10 bg-white rounded-xl">
+            <div className="text-6xl mb-6">
+              <ContactPageIcon
+                fontSize="inherit"
+                className="p-3 text-blue-600 bg-blue-200 rounded-full"
+              />
+            </div>
+            <p className="font-semibold">Families</p>
+            <p>
+              Rent a beautiful house for your family. Choose from in sociaties
+              and individual apartment.
+            </p>
           </div>
         </div>
       </div>
