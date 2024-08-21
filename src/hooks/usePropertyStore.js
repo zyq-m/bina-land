@@ -3,7 +3,7 @@ import data from "../data/property.json";
 
 const usePropertyStore = create((set) => ({
   property: data,
-  update: ({ state, price, name, size }) =>
+  update: ({ state, price, name, size, type }) =>
     set((s) => {
       let filterState = s.property;
 
@@ -24,8 +24,13 @@ const usePropertyStore = create((set) => ({
 
       if (size) filterState = filterState.filter((item) => item.size <= size);
 
+      if (type)
+        filterState = filterState.filter((item) =>
+          item.type.toLowerCase().includes(type.toLowerCase())
+        );
+
       return {
-        property: !filterState.length ? s.property : filterState,
+        property: !filterState.length ? data : filterState,
       };
     }),
 }));

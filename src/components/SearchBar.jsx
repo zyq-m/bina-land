@@ -31,7 +31,7 @@ const SearchBar = () => {
           setSearch((prev) => ({ ...prev, price: JSON.parse(e.target.value) }));
         }}
       >
-        <option disabled selected>
+        <option selected value={JSON.stringify({})}>
           Price
         </option>
         <option value={JSON.stringify({ min: 0, max: 80000 })}>
@@ -44,13 +44,18 @@ const SearchBar = () => {
           RM100,000 and above
         </option>
       </select>
-      <select className="select select-bordered w-full">
-        <option disabled selected>
+      <select
+        className="select select-bordered w-full"
+        onChange={(e) => {
+          setSearch((prev) => ({ ...prev, type: e.target.value }));
+        }}
+      >
+        <option selected value="">
           Property Type
         </option>
-        <option>Land</option>
+        {/* <option>Land</option>
         <option>Commercial Real Estate</option>
-        <option>Industrial Real Estate</option>
+        <option>Industrial Real Estate</option> */}
         <option>Residential Real Estate</option>
       </select>
       <input
