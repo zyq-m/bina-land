@@ -3,16 +3,12 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { useParams } from "react-router-dom";
 import { usePropertyStore } from "../../hooks";
-import React, { useEffect, useState } from "react";
 import { Layout, PropertyCard } from "../../components";
 
 // Icons
 import ReplyOutlinedIcon from "@mui/icons-material/ReplyOutlined";
 import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlined";
 import ReplyOutlinedIcon from "@mui/icons-material/ReplyOutlined";
-import { useParams } from "react-router-dom";
-import { usePropertyStore } from "../../hooks";
-
 import SupportAgentIcon from "@mui/icons-material/SupportAgent";
 
 const Detail = () => {
