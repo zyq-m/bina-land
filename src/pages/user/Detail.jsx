@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { useParams } from "react-router-dom";
@@ -8,6 +9,8 @@ import { Layout, PropertyCard } from "../../components";
 // Icons
 import ReplyOutlinedIcon from "@mui/icons-material/ReplyOutlined";
 import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlined";
+
+import SupportAgentIcon from "@mui/icons-material/SupportAgent";
 
 const Detail = () => {
   const { id } = useParams();
@@ -28,13 +31,14 @@ const Detail = () => {
     return (
       <div>
         <button
-          className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2 z-10"
+          className="btn btn-sm btn-circle btn-ghost absolute right-8 top-8 z-10 bg-slate-300"
           onClick={() => setViewImg(false)}
         >
           ✕
         </button>
         <Carousel
           infinite
+          className="bg-black"
           responsive={{
             desktop: {
               breakpoint: { max: 3000, min: 1024 },
@@ -177,21 +181,13 @@ const Detail = () => {
 
           <div className="card bg-base-100 shadow-md rounded-lg row-start-2 col-start-3 row-span-4 h-min">
             <div className="card-body">
-              <div className="flex items-center gap-4 mb-4">
-                <div className="avatar">
-                  <div className="w-24 rounded-full">
-                    <img src={property?.avatar} alt="Agent" />
-                  </div>
-                </div>
-                <div>
-                  <div className="text-lg font-medium">
-                    {property?.agent?.name}
-                  </div>
-                  <div className="text-gray-400">
-                    Phone : {property?.agent?.phone}
-                  </div>
-                </div>
+              <div className="text-6xl mb-4 text-center">
+                <SupportAgentIcon
+                  fontSize="inherit"
+                  className="p-3 text-blue-600 bg-blue-200 rounded-full"
+                />
               </div>
+              <p className="text-center mb-3 font-medium">Send us a Message</p>
               <form className="grid gap-4">
                 <input
                   type="text"
@@ -213,7 +209,7 @@ const Detail = () => {
                   placeholder="Message"
                 ></textarea>
                 <button type="button" className="btn bg-blue-500 text-white">
-                  Contact Staff
+                  Contact Us
                 </button>
               </form>
               <div className="card-actions justify-end">
