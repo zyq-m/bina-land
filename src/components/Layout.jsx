@@ -1,11 +1,13 @@
 import React, { useEffect, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 
+// Icons
+import LocalActivityOutlinedIcon from "@mui/icons-material/LocalActivityOutlined";
+
 const NAV = [
   { link: "/home", label: "Home" },
   { link: "/list", label: "Explore Property" },
   { link: "/about", label: "About Us" },
-  // { link: "/staff", label: "Our Staff" },
 ];
 
 const Layout = ({ children }) => {
@@ -22,16 +24,16 @@ const Layout = ({ children }) => {
   return (
     <>
       {/* Navbar */}
-      <div className="shadow-lg">
-        <nav className="navbar py-6 max-w-screen-xl mx-auto px-4">
+      <div className="shadow-xl">
+        <nav className="navbar py-4 max-w-screen-xl mx-auto px-4">
           <div className="flex-1">
             <Link
               to="/home"
               className="flex items-center gap-2 px-2 text-2xl font-bold"
             >
-              <img src="/logo.png" alt="logo" className="w-32" />
+              <img src="/logo.png" alt="logo" className="w-28" />
             </Link>
-            <ul className="flex gap-5 ml-6 font-semibold text-lg">
+            <ul className="flex gap-4 ml-6 font-semibold text-md">
               {NAV.map((navItem, index) => (
                 <li key={index}>
                   <NavLink
@@ -46,7 +48,19 @@ const Layout = ({ children }) => {
               ))}
             </ul>
           </div>
+
           <div>
+            <div>
+              <Link to="/shortlisted">
+                <button className="btn btn-sm btn-outline mr-2 px-5">
+                  <span>
+                    <LocalActivityOutlinedIcon className="text-blue-400" />
+                  </span>
+                  My Shortlisted
+                </button>
+              </Link>
+            </div>
+
             <div className="flex-none">
               <div className="flex gap-4 items-center">
                 <div className="dropdown dropdown-end">
