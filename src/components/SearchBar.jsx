@@ -13,7 +13,7 @@ const SearchBar = () => {
   return (
     <form
       onSubmit={onSearch}
-      className="grid gap-4 grid-flow-row-dense grid-cols-6 px-4 py-6 shadow-md rounded-lg bg-base-100 mb-12"
+      className="grid gap-5 grid-flow-row-dense grid-cols-4 px-4 py-6 shadow-md rounded-lg bg-base-100 mb-12"
     >
       <input
         type="text"
@@ -24,6 +24,7 @@ const SearchBar = () => {
           setSearch((prev) => ({ ...prev, state: e.target.value }));
         }}
       />
+
       <select
         name="price"
         className="select select-bordered w-full"
@@ -31,7 +32,7 @@ const SearchBar = () => {
           setSearch((prev) => ({ ...prev, price: JSON.parse(e.target.value) }));
         }}
       >
-        <option disabled selected>
+        <option selected value={JSON.stringify({})}>
           Price
         </option>
         <option value={JSON.stringify({ min: 0, max: 80000 })}>
@@ -44,24 +45,7 @@ const SearchBar = () => {
           RM100,000 and above
         </option>
       </select>
-      <select className="select select-bordered w-full">
-        <option disabled selected>
-          Property Type
-        </option>
-        <option>Land</option>
-        <option>Commercial Real Estate</option>
-        <option>Industrial Real Estate</option>
-        <option>Residential Real Estate</option>
-      </select>
-      <input
-        type="number"
-        name="size"
-        placeholder="Size (sqft)"
-        className="input input-bordered w-full"
-        onChange={(e) => {
-          setSearch((prev) => ({ ...prev, size: e.target.value }));
-        }}
-      />
+
       <div className="flex col-span-2 gap-1">
         <input
           type="search"

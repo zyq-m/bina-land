@@ -7,6 +7,7 @@ import { Layout, PropertyCard, SearchBar } from "../../components";
 import EqualizerIcon from "@mui/icons-material/Equalizer";
 import ContactPageIcon from "@mui/icons-material/ContactPage";
 import SupportAgentIcon from "@mui/icons-material/SupportAgent";
+import PropertyTypeCard from "../../components/PropertyTypeCard";
 import HealthAndSafetyIcon from "@mui/icons-material/HealthAndSafety";
 
 const HomePage = () => {
@@ -40,23 +41,57 @@ const HomePage = () => {
           </div>
         </div>
         {/* Search Bar */}
-        <div className="absolute left-0 right-0 -bottom-24 max-w-screen-xl mx-auto px-4">
+        <div className="absolute left-0 right-0 -bottom-24 max-w-screen-lg mx-auto px-4">
           <SearchBar />
         </div>
       </div>
 
-      {/* Featured Listings */}
+      {/* property Type and Featured Listing*/}
       <div className="max-w-screen-xl mx-auto px-4 py-28">
-        <div className="text-center text-3xl font-bold">Featured Listings</div>
-        <div className="mt-16 grid grid-cols-4 gap-5">
-          {data.slice(0, 4).map((d, i) => (
-            <PropertyCard key={i} property={d} />
-          ))}
+        <div>
+          <div className="mt-4 grid grid-cols-4 gap-5">
+            <PropertyTypeCard
+              type="property"
+              index={"Land For Sale"}
+              src={
+                "https://img.freepik.com/premium-photo/new-house-construction-building-site_293060-52.jpg"
+              }
+            />
+            <PropertyTypeCard
+              index={"Farms and Ranches"}
+              src={
+                "https://media2.malaymail.com/uploads/articles/2020/2020-11/malaysia_farm_budget_031120b.jpg"
+              }
+            />
+            <PropertyTypeCard
+              index={"House For Sale"}
+              src={
+                "https://media.istockphoto.com/id/1297933338/photo/asian-chinese-family-looking-at-their-new-house-with-their-daughter-and-son.jpg?s=612x612&w=0&k=20&c=ZGzcpbbjDfcffbZ6W1ZX5kr5TtppMj7nojdrmzeLLo8="
+              }
+            />
+            <PropertyTypeCard
+              index={"RiverFront"}
+              src={
+                "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWqRYhX20SHmjPZuGrSRtlyZhiNgzy5G567tVyz7hq393T8qvrsl-zCtlGK04aqVrOxx4&usqp=CAU"
+              }
+            />
+          </div>
+        </div>
+
+        <div className="mt-20">
+          <div className="text-left text-3xl font-semibold">
+            Featured Listings
+          </div>
+          <div className="mt-4 grid grid-cols-3 gap-5">
+            {data.slice(0, 6).map((data, index) => (
+              <PropertyCard key={index} property={data} />
+            ))}
+          </div>
         </div>
       </div>
 
       {/* Trusted Real Estate Advisors */}
-      <div className="bg-base-100 py-20">
+      <div className="bg-base-100 py-28">
         <div className="grid grid-cols-2 gap-16 mt-6 max-w-screen-xl mx-auto px-4">
           <div>
             <p className="text-5xl font-bold">

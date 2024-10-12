@@ -38,6 +38,16 @@ const router = createBrowserRouter([
     path: "/shortlisted",
     element: <Page.MyShortListed />,
   },
+
+  // Admin
+  {
+    path: "/admin/dashboard",
+    element: <Page.AdminDashboard />,
+  },
+  {
+    path: "/admin/add-property",
+    element: <Page.AddProperty />,
+  },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
