@@ -41,7 +41,7 @@ const PropertyCard = ({ property }) => {
       </div>
       <div className="card-body">
         <div className="flex justify-between items-center">
-          <h2 className="card-title">{property?.name}</h2>
+          <p className="font-bold text-md">{money.format(property?.price)}</p>
           <button onClick={() => storeWishlist(property)}>
             <FavoriteBorderOutlined className="hover:text-blue-500" />
           </button>
@@ -49,9 +49,14 @@ const PropertyCard = ({ property }) => {
         <p>
           {property?.address?.city}, {property?.address?.state}
         </p>
-        <p className="font-bold text-blue-500">
-          {money.format(property?.price)}
-        </p>
+
+        <div className="flex justify-start items-start space-x-2">
+          <div className="text-md text-slate-500">{property?.name}</div>
+          <div className="text-slate-500">&bull;</div>
+          <div className="text-md text-slate-500">890 sqft</div>
+          <div className="text-slate-500">&bull;</div>
+          <div className="text-md text-slate-500">Fully Furnished</div>
+        </div>
       </div>
     </div>
   );

@@ -111,7 +111,7 @@
     "id": "eec157df-cb1f-4987-b655-f655be646294",
     "type": "residential real estate",
     "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/315.jpg",
-    "name": "Single-Family House",
+    "name": "Codominium",
     "price": "77419.00",
     "size": 153,
     "img": [
@@ -263,7 +263,7 @@
     "id": "3601ed60-1509-4e77-9974-1cb5d63884b9",
     "type": "residential real estate",
     "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1041.jpg",
-    "name": "Single-Family House",
+    "name": "Codominium",
     "price": "50662.00",
     "size": 345,
     "img": [
@@ -296,83 +296,5 @@
       "country": "Malaysia"
     },
     "map": { "embedId": "", "direction": "97892 Lucio Cape Karlboro" }
-  },
-  {
-    "id": "dd662e7a-aa8f-49e6-868b-03019362df09",
-    "type": "residential real estate",
-    "avatar": "https://avatars.githubusercontent.com/u/73990885",
-    "name": "Semi-D House",
-    "price": "193118.00",
-    "size": 754,
-    "img": [
-      {
-        "src": "https://cdn.rnudah.com/images/plain/2fe602c228b785b6d122feb636635f70-2843051633671992525.jpg"
-      },
-      {
-        "src": "https://cdn.rnudah.com/images/plain/9d4401430c33d430252884f220e7219f-2843051622816806093.jpg"
-      },
-      {
-        "src": "https://cdn.rnudah.com/images/plain/c0822312bcac7f92d7b17f3195058d53-2843051628688962765.jpg"
-      },
-      {
-        "src": "https://cdn.rnudah.com/images/plain/a4b4630dd5c8953b59ac65751c81dac3-2843051626399000830.jpg"
-      },
-      {
-        "src": "https://cdn.rnudah.com/images/plain/c2a74c41ac9254d82fd5529c176b0d35-2843051628766290356.jpg"
-      }
-    ],
-    "agent": {
-      "name": "Norma Kunze",
-      "title": "Global Intranet Orchestrator",
-      "phone": "010-17261231"
-    },
-    "address": {
-      "address": "20525 Chestnut Close",
-      "city": "Marang",
-      "state": "Terengganu",
-      "zip": "06588",
-      "country": "Malaysia"
-    },
-    "map": { "embedId": "", "direction": "73567 Hoppe Estates Koeppstad" }
-  },
- 
-  {
-    "id": "7fbc4255-98dc-4220-80cc-199b76b8bbc3",
-    "type": "residential real estate",
-    "avatar": "https://avatars.githubusercontent.com/u/59483943",
-    "name": "Bungalow",
-    "price": "951867.00",
-    "size": 299,
-    "img": [
-      {
-        "src": "https://cdn.rnudah.com/images/plain/cc3057d15eb655a1faa6def7ab89c984-2886674992592202387.jpg"
-      },
-      {
-        "src": "https://cdn.rnudah.com/images/plain/b9217692028eeb375c6db1b5c5f74051-2886675012742294163.jpg"
-      },
-      {
-        "src": "https://cdn.rnudah.com/images/plain/8f323a1ad2ec9fc5f8fb5113faef8532-2886675010688472705.jpg"
-      },
-      {
-        "src": "https://cdn.rnudah.com/images/plain/64e647ac62044c1c4490c830508b0b34-2886675007974079523.jpg"
-      },
-      {
-        "src": "https://cdn.rnudah.com/images/plain/4368f80067431f881590d256967997cc-2886675017285893155.jpg"
-      }
-    ],
-    "agent": {
-      "name": "Joel Pouros",
-      "title": "Regional Branding Strategist",
-      "phone": "010-17261231"
-    },
-    "address": {
-      "address": "310 Antwan Place",
-      "city": "Marang",
-      "state": "Terengganu",
-      "zip": "64672",
-      "country": "Malaysia"
-    },
-    "map": { "embedId": "", "direction": "3448 Elton Rest Lake Lemuelfort" }
   }
-  
 ]
