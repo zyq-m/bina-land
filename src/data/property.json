@@ -5,8 +5,8 @@
     "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1036.jpg",
     "name": "Bungalow",
     "price": "502508.00",
-    "size": 456,
-    "img": [
+    "sqft": 456,
+    "image": [
       {
         "src": "https://cdn.rnudah.com/images/plain/976b441dbedda1633897208a79bf57a7-2878312216341339567.jpg"
       },
@@ -25,14 +25,15 @@
       "title": "Corporate Web Orchestrator",
       "phone": "010-17261231"
     },
-    "address": {
-      "address": "611 S Main Street",
-      "city": "Setia Alam",
-      "state": "Selangor",
-      "zip": "24303-8816",
-      "country": "Malaysia"
-    },
-    "map": { "embedId": "", "direction": "14470 Etha Drives East Gerda" }
+    "address": "611 S Main Street",
+    "city": "Setia Alam",
+    "state": "Selangor",
+    "zip": "24303-8816",
+    "country": "Malaysia",
+    "map": {
+      "embedId": "",
+      "direction": "14470 Etha Drives East Gerda"
+    }
   },
   {
     "id": "50a0bf65-1a49-4fb6-9e6a-ceae419b9aac",
@@ -40,8 +41,8 @@
     "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/298.jpg",
     "name": "Bungalow",
     "price": "680219.00",
-    "size": 582,
-    "img": [
+    "sqft": 582,
+    "image": [
       {
         "src": "https://cdn.rnudah.com/images/plain/45cf9a0d1faab0a8bd25d1a70bb967ea-2851497852545906833.jpg"
       },
@@ -63,14 +64,15 @@
       "title": "National Identity Planner",
       "phone": "010-17261231"
     },
-    "address": {
-      "address": "958 Bashirian Fall",
-      "city": "Puchong",
-      "state": "Selangor",
-      "zip": "87072-9755",
-      "country": "Malaysia"
-    },
-    "map": { "embedId": "", "direction": "9848 Kihn Track Mobile" }
+    "address": "958 Bashirian Fall",
+    "city": "Puchong",
+    "state": "Selangor",
+    "zip": "87072-9755",
+    "country": "Malaysia",
+    "map": {
+      "embedId": "",
+      "direction": "9848 Kihn Track Mobile"
+    }
   },
   {
     "id": "30c93a47-a289-4b66-b174-7e8ed42e4e63",
@@ -78,8 +80,8 @@
     "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/815.jpg",
     "name": "Bungalow",
     "price": "297890.00",
-    "size": 457,
-    "img": [
+    "sqft": 457,
+    "image": [
       {
         "src": "https://my1-cdn.pgimgs.com/listing/33416907/UPHO.197132782.V800/Bayan-Lepas-Sungai-Tiram-Double-Storey-Bungalow-Penang-Island-Malaysia.jpg"
       },
@@ -98,14 +100,15 @@
       "title": "National Branding Consultant",
       "phone": "010-17261231"
     },
-    "address": {
-      "address": "10979 Howard Road",
-      "city": "Cheras",
-      "state": "Selangor",
-      "zip": "84111",
-      "country": "Malaysia"
-    },
-    "map": { "embedId": "", "direction": "2823 Pedro Crescent Port Maximillia" }
+    "address": "10979 Howard Road",
+    "city": "Cheras",
+    "state": "Selangor",
+    "zip": "84111",
+    "country": "Malaysia",
+    "map": {
+      "embedId": "",
+      "direction": "2823 Pedro Crescent Port Maximillia"
+    }
   },
   {
     "id": "eec157df-cb1f-4987-b655-f655be646294",
@@ -113,8 +116,8 @@
     "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/315.jpg",
     "name": "Codominium",
     "price": "77419.00",
-    "size": 153,
-    "img": [
+    "sqft": 153,
+    "image": [
       {
         "src": "https://my1-cdn.pgimgs.com/listing/37726049/UPHO.210061245.V800/Aurora-Residence-Lake-Side-City-Puchong-Malaysia.jpg"
       },
@@ -136,14 +139,15 @@
       "title": "District Usability Administrator",
       "phone": "010-17261231"
     },
-    "address": {
-      "address": "85253 Walter Cliff",
-      "city": "Rawang",
-      "state": "Selangor",
-      "zip": "13926",
-      "country": "Malaysia"
-    },
-    "map": { "embedId": "", "direction": "200 6th Street North Gunner" }
+    "address": "85253 Walter Cliff",
+    "city": "Rawang",
+    "state": "Selangor",
+    "zip": "13926",
+    "country": "Malaysia",
+    "map": {
+      "embedId": "",
+      "direction": "200 6th Street North Gunner"
+    }
   },
   {
     "id": "c9629b1f-bc23-4852-ab3a-90c1ff5e894e",
@@ -151,8 +155,8 @@
     "avatar": "https://avatars.githubusercontent.com/u/59237343",
     "name": "Bungalow",
     "price": "95739.00",
-    "size": 660,
-    "img": [
+    "sqft": 660,
+    "image": [
       {
         "src": "https://my1-cdn.pgimgs.com/listing/41803405/UPHO.250885424.V800/The-Peak-Residences-Timor-Laut-Island-Malaysia.jpg"
       },
@@ -174,14 +178,15 @@
       "title": "Customer Accountability Developer",
       "phone": "010-17261231"
     },
-    "address": {
-      "address": "1610 Turner Station",
-      "city": "Sungai Petani",
-      "state": "Kedah",
-      "zip": "11238",
-      "country": "Malaysia"
-    },
-    "map": { "embedId": "", "direction": "58270 Earl Square Altenwerthton" }
+    "address": "1610 Turner Station",
+    "city": "Sungai Petani",
+    "state": "Kedah",
+    "zip": "11238",
+    "country": "Malaysia",
+    "map": {
+      "embedId": "",
+      "direction": "58270 Earl Square Altenwerthton"
+    }
   },
   {
     "id": "8b4ef765-69b4-432f-b495-35aacd25ca89",
@@ -189,8 +194,8 @@
     "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/926.jpg",
     "name": "Duplex",
     "price": "60169.00",
-    "size": 391,
-    "img": [
+    "sqft": 391,
+    "image": [
       {
         "src": "https://my1-cdn.pgimgs.com/listing/41684489/UPHO.249615028.V800/The-Nomad-SuCasa-KL-City-Malaysia.jpg"
       },
@@ -212,14 +217,15 @@
       "title": "Regional Research Facilitator",
       "phone": "010-17261231"
     },
-    "address": {
-      "address": "40132 Stephany Flat",
-      "city": "Muar",
-      "state": "Johor",
-      "zip": "39358",
-      "country": "Malaysia"
-    },
-    "map": { "embedId": "", "direction": "82293 Schaden Viaduct Folsom" }
+    "address": "40132 Stephany Flat",
+    "city": "Muar",
+    "state": "Johor",
+    "zip": "39358",
+    "country": "Malaysia",
+    "map": {
+      "embedId": "",
+      "direction": "82293 Schaden Viaduct Folsom"
+    }
   },
   {
     "id": "d4b5b4a2-491b-4d9d-945d-0e8ead013aa9",
@@ -227,8 +233,8 @@
     "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/335.jpg",
     "name": "Bungalow",
     "price": "4574309.00",
-    "size": 749,
-    "img": [
+    "sqft": 749,
+    "image": [
       {
         "src": "https://my1-cdn.pgimgs.com/listing/42059847/UPHO.253655711.V800/Aster-Hill-Sri-Petaling-Malaysia.jpg"
       },
@@ -250,14 +256,15 @@
       "title": "Lead Paradigm Supervisor",
       "phone": "010-17261231"
     },
-    "address": {
-      "address": "4816 Wiley Skyway",
-      "city": "Kemaman",
-      "state": "Terengganu",
-      "zip": "30449",
-      "country": "Malaysia"
-    },
-    "map": { "embedId": "", "direction": "343 Torp Green Port Rollinmouth" }
+    "address": "4816 Wiley Skyway",
+    "city": "Kemaman",
+    "state": "Terengganu",
+    "zip": "30449",
+    "country": "Malaysia",
+    "map": {
+      "embedId": "",
+      "direction": "343 Torp Green Port Rollinmouth"
+    }
   },
   {
     "id": "3601ed60-1509-4e77-9974-1cb5d63884b9",
@@ -265,8 +272,8 @@
     "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1041.jpg",
     "name": "Codominium",
     "price": "50662.00",
-    "size": 345,
-    "img": [
+    "sqft": 345,
+    "image": [
       {
         "src": "https://cdn.rnudah.com/images/plain/8d933b8a89723996d72d2017b7072270-2880922095783064893.jpg"
       },
@@ -288,13 +295,14 @@
       "title": "Central Usability Strategist",
       "phone": "010-17261231"
     },
-    "address": {
-      "address": "92932 Effertz Trace",
-      "city": "Dungun",
-      "state": "Terengganu",
-      "zip": "60156",
-      "country": "Malaysia"
-    },
-    "map": { "embedId": "", "direction": "97892 Lucio Cape Karlboro" }
+    "address": "92932 Effertz Trace",
+    "city": "Dungun",
+    "state": "Terengganu",
+    "zip": "60156",
+    "country": "Malaysia",
+    "map": {
+      "embedId": "",
+      "direction": "97892 Lucio Cape Karlboro"
+    }
   }
 ]
