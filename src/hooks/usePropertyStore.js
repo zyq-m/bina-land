@@ -4,10 +4,12 @@ import api from "../../axios";
 const usePropertyStore = create((set) => ({
 	property: [],
 	filters: {},
+	states: [],
 	setFilters: (newfilters) =>
 		set((state) => ({
 			filters: { ...state.filters, ...newfilters },
 		})),
+	selectedState: (selected) => set(() => ({ states: selected })),
 	fetchProperty: async () => {
 		try {
 			const { filters } = usePropertyStore.getState();

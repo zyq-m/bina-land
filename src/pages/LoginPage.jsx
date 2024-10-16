@@ -1,6 +1,7 @@
 import { useForm } from "react-hook-form";
 import { useNavigate } from "react-router-dom";
 import api from "../../axios";
+import { jwtDecode } from "jwt-decode";
 
 const Login = () => {
 	const navigate = useNavigate();
@@ -15,6 +16,7 @@ const Login = () => {
 		try {
 			const login = await api.post("/auth/login", { ...data });
 			const token = login.data;
+			const decode = jwtDecode(token.access_token);
 
 			// store token
 			window.localStorage.setItem("access_token", token.access_token);

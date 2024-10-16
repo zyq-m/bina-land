@@ -46,6 +46,18 @@ const Detail = () => {
 			});
 	}, [id]);
 
+	const addToShortList = async () => {
+		try {
+			const newShortList = await api.post("/property/wish", {
+				id: id,
+			});
+
+			console.log(newShortList.data);
+		} catch (error) {
+			console.log(error);
+		}
+	};
+
 	if (viewImg) {
 		return (
 			<div>
@@ -117,7 +129,10 @@ const Detail = () => {
 							</div>
 
 							<div>
-								<button className="btn btn-ghost btn-md">
+								<button
+									className="btn btn-ghost btn-md"
+									onClick={addToShortList}
+								>
 									<FavoriteBorderOutlinedIcon />
 									Shortlist
 								</button>

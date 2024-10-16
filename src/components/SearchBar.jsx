@@ -8,7 +8,7 @@ const SearchBar = () => {
 	const onSearch = (e) => {
 		e.preventDefault();
 
-		setFilters({ name: search });
+		setFilters({ search: search });
 		fetchProperty();
 	};
 
@@ -20,7 +20,7 @@ const SearchBar = () => {
 			<div className="flex col-span-2 gap-1">
 				<input
 					type="search"
-					name="name"
+					name="search"
 					placeholder="Search..."
 					className="input input-bordered w-full"
 					onChange={(e) => {

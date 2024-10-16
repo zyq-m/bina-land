@@ -11,18 +11,14 @@ const propertyType = [
 ];
 
 const SideBarFilter = () => {
-	const { setFilters, fetchProperty } = usePropertyStore();
+	const { setFilters, fetchProperty, selectedState } = usePropertyStore();
 	const [states, setStates] = useState([]);
 	const [filterOption, setFilterOption] = useState({});
 
-	const handleCheckboxChange = (event) => {
-		const { value, checked } = event.target;
-		setFilterOption((prev) => ({
-			...prev,
-			selectedState: checked
-				? [...prev.selectedState, value]
-				: prev.selectedState.filter((state) => state !== value),
-		}));
+	const handleCheckboxChange = (index) => {
+		const newStates = [...states];
+		newStates[index].checked = !newStates[index].checked;
+		setStates(newStates);
 	};
 
 	const onApplyFilter = () => {
@@ -31,14 +27,24 @@ const SideBarFilter = () => {
 	};
 
 	useEffect(() => {
+		setFilters({
+			...filterOption,
+			states: states.filter((d) => d.checked).map((d) => d.value),
+		});
+		fetchProperty();
+	}, [fetchProperty, filterOption, selectedState, setFilters, states]);
+
+	useEffect(() => {
 		axios
 			.get("https://jian.sh/malaysia-api/state/v1/all.json")
 			.then((res) => {
-				const transformedStates = res.data.map((item) => ({
-					label: item.state,
-					value: item.state,
-				}));
-				setStates(transformedStates);
+				setStates(
+					res.data.map((item) => ({
+						label: item.state,
+						value: item.state,
+						checked: false,
+					}))
+				);
 			});
 	}, []);
 
@@ -61,7 +67,7 @@ const SideBarFilter = () => {
 							type="checkbox"
 							className="checkbox-xs checkbox-primary mr-2"
 							value={item.value}
-							onChange={handleCheckboxChange}
+							onChange={() => handleCheckboxChange(index)}
 						/>
 						<span className="label-text text-md font-normal text-slate-800">
 							{item.label}
